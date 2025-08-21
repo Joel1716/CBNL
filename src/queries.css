@@ -1,0 +1,178 @@
+/* GENERAL QUERIES FOR THE HOME AND ANY REUSABLE LIKE THE FOOTER, HEADER E.T.C. ALL OTHER PAGE QUERIES ARE IN THEIR RESPECTIVE CSS */
+@media (max-width: 66em) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .quick-links {
+    grid-row: 2/3;
+  }
+}
+
+@media (max-width: 62em) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+  header img {
+    width: 18rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+  .gallery li:last-child {
+    grid-column: -1/-3;
+    justify-items: center;
+  }
+  .services {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+  }
+  .services-info {
+    padding: 0;
+  }
+  .services-info h3 {
+    max-width: none;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .img-box img {
+    height: 70rem;
+  }
+  .info-box {
+    padding: 4rem 1rem 0 1rem;
+  }
+  .slideshows div img {
+    width: 18rem;
+    height: 13rem;
+  }
+  .faq-container,
+  .stats-container {
+    width: 95%;
+  }
+  .page-main h2 {
+    line-height: 1.5;
+  }
+}
+@media (max-width: 54em) {
+  header {
+    justify-content: space-between;
+  }
+  header nav {
+    display: none;
+  }
+  header.open nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* border: 1px solid var(--main-blue-color); */
+    width: 45%;
+    padding: 9rem 0 2rem 0;
+    gap: 2.5rem;
+    background-color: white;
+  }
+  header nav ul {
+    gap: 4rem;
+  }
+  header nav ul,
+  header nav {
+    flex-direction: column;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .hamburger div {
+    width: 4rem;
+    height: 0.4rem;
+    background-color: black;
+    z-index: 999;
+    transition: 0.15s;
+  }
+  .open .hamburger div:first-child {
+    transform: rotate(50deg) translate(8px, 5px);
+  }
+  .open .hamburger div:nth-child(2) {
+    opacity: 0;
+    transition: 0.01s;
+  }
+  .open .hamburger div:last-child {
+    transform: rotate(-50deg) translate(6px, -5px);
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+  }
+  .hero-info h1 {
+    font-size: 5rem;
+  }
+  .cta {
+    width: 95%;
+  }
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+  .isp-form {
+    width: 90%;
+  }
+}
+@media (max-width: 44em) {
+  html {
+    font-size: 56.25%;
+  }
+  .stats-container,
+  .gallery,
+  .services-offered {
+    grid-template-columns: 1fr;
+  }
+  .gallery li:last-child {
+    grid-column: auto;
+    justify-items: stretch;
+  }
+  .service {
+    gap: 1.2rem;
+  }
+  .hero-info p {
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
+  .contacts .address p,
+  .company-info p {
+    line-height: 1.8;
+  }
+}
+@media (max-width: 32em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-info {
+    width: 95%;
+  }
+  .company-info,
+  .quick-links,
+  .contact-address,
+  .Get-In-Touch {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .contact-address {
+    width: 80%;
+    grid-row: 4/5;
+  }
+  .isp-form {
+    width: 100%;
+  }
+  .footer {
+    column-gap: 0;
+  }
+}
+@media (max-width: 24em) {
+  html {
+    font-size: 43.75%;
+  }
+  .hero-info h1 {
+    margin-top: 3rem;
+  }
+}

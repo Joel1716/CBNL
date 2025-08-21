@@ -1,0 +1,33 @@
+.exec-hero {
+  background: url("Teams.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.exec-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 5rem;
+  row-gap: 8rem;
+  margin-top: 6rem;
+}
+.exec-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.exec-img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+}
+.exec-name {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: var(--main-blue-color);
+}
+.exec-role {
+  font-size: 1.6rem;
+}

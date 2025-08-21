@@ -1,0 +1,63 @@
+.footer-section {
+  margin-top: 6rem;
+  padding: 5rem 1rem;
+  background-color: #0b2e59;
+}
+.footer {
+  width: 95%;
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+  gap: 5rem;
+  margin: 0 auto;
+  font-size: 1.7rem;
+}
+.footer p {
+  color: #dee2e6;
+}
+.footer-section a {
+  color: #dee2e6;
+}
+.footer-section a:hover {
+  color: var(--main-blue-color);
+}
+.footer-section h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.company-info .company-logo {
+  background-color: white;
+  margin-bottom: 1rem;
+}
+.company-info p {
+  font-size: 1.7rem;
+  line-height: 1.4;
+}
+.quick-links ul {
+  gap: 2rem;
+  column-gap: 2.5rem;
+  margin-top: 2rem;
+}
+.contacts,
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+.quick-links li {
+  list-style: none;
+}
+.quick-links li a {
+  font-size: 1.8rem;
+}
+.contacts .address p {
+  line-height: 1.4;
+}
+.media-links svg {
+  height: 2.5rem;
+  border: none;
+}

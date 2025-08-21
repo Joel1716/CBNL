@@ -1,0 +1,81 @@
+.oem-hero {
+  background: url("OEM.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.oem-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--form-background);
+  padding: 2rem 3rem 2rem 2rem;
+  width: 70%;
+  max-width: 70rem;
+  margin-top: 4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.oem-form h3 {
+  color: var(--main-blue-color);
+  margin-bottom: 2.5rem;
+}
+.oem-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.oem-form label {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+}
+.oem-form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.oem-form .button-form {
+  align-self: flex-start;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--main-blue-color);
+  color: white;
+  cursor: pointer;
+}
+.oem-form .button-form:focus {
+  border: none;
+}
+.oem-form textarea {
+  resize: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  line-height: 1.8;
+}
+.oem-form input:focus,
+.oem-form textarea:focus {
+  border: 2px solid var(--main-blue-color);
+}
+.oem-form p {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+.success {
+  color: green;
+}
+.failed,
+.error {
+  color: red;
+}

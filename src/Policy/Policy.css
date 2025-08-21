@@ -1,0 +1,34 @@
+.policy-hero {
+  background: url("Policy.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.policies p {
+  margin-bottom: 2rem;
+}
+.policies ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-left: 4rem;
+}
+.policies li {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+.exec-signature {
+  margin-top: 3rem;
+}
+.exec-signature img {
+  width: 100%;
+}
+@media (max-width: 36em) {
+  .page-main .policies h2 {
+    font-size: 2.5rem;
+  }
+  .policies ul {
+    padding-left: 2rem;
+  }
+}

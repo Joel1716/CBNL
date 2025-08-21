@@ -1,0 +1,9 @@
+.home-hero {
+  background: url("background.webp");
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 8rem;
+}
+.home-hero button {
+  margin-top: 2rem;
+}

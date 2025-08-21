@@ -1,0 +1,81 @@
+.isp-hero {
+  background: url("ISP.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.isp-form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--form-background);
+  padding: 2rem 3rem 2rem 2rem;
+  width: 70%;
+  max-width: 70rem;
+  margin-top: 4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.isp-form h3 {
+  color: var(--main-blue-color);
+  margin-bottom: 2.5rem;
+}
+.isp-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.isp-form label {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 500;
+}
+.isp-form input {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.isp-form .button-form {
+  align-self: flex-start;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--main-blue-color);
+  color: white;
+  cursor: pointer;
+}
+.isp-form .button-form:focus {
+  border: none;
+}
+.isp-form textarea {
+  resize: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  line-height: 1.8;
+}
+.isp-form input:focus,
+.isp-form textarea:focus {
+  border: 2px solid var(--main-blue-color);
+}
+.isp-form p {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+.success {
+  color: green;
+}
+.failed,
+.error {
+  color: red;
+}

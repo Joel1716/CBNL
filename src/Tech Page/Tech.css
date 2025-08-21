@@ -1,0 +1,28 @@
+.tech-hero {
+  background: url("Tech.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.tech-container {
+  margin-top: 5rem;
+}
+.tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-top: 8rem;
+  gap: 4rem;
+}
+.tech div {
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.3);
+}
+.tech img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+  background-color: #fff;
+  padding: 1rem;
+}
