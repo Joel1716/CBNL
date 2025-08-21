@@ -1,5 +1,5 @@
 .about-hero {
-  background: url("about.webp");
+  background: url("./about.webp");
   background-size: cover;
   background-position: bottom;
   height: 80vh;

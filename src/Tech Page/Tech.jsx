@@ -46,7 +46,7 @@ export default function Tech() {
             {techs.map((tech) => {
               return (
                 <div>
-                  <img src={tech} alt="" />
+                  <img src={`./${tech}`} alt="" />
                 </div>
               );
             })}
