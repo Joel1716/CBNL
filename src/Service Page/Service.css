@@ -37,7 +37,7 @@
   font-size: 1.7rem;
   color: #3c3e41;
 }
-.sign {
+.service-sign {
   position: absolute;
   bottom: 1rem; /* keeps it locked at top */
   right: 1.5rem; /* keeps it aligned right */

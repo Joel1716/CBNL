@@ -109,9 +109,6 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 5rem;
   }
-  .hero-info h1 {
-    font-size: 5rem;
-  }
   .cta {
     width: 95%;
   }

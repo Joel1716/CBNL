@@ -104,7 +104,7 @@ export default function Service() {
                     <p className="short-message text-center">
                       {service.shortMessage}
                     </p>
-                    <p className="sign">{selected === i ? "-" : "+"}</p>
+                    <p className="service-sign">{selected === i ? "-" : "+"}</p>
                   </div>
 
                   {/* ROW PANEL (grid item that spans ALL columns) */}
