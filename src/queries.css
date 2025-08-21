@@ -53,6 +53,10 @@
   .page-main h2 {
     line-height: 1.5;
   }
+  .isp-form,
+  .oem-form {
+    width: 90%;
+  }
 }
 @media (max-width: 54em) {
   header {
@@ -114,9 +118,6 @@
   .grid-two-cols {
     grid-template-columns: 1fr;
   }
-  .isp-form {
-    width: 90%;
-  }
 }
 @media (max-width: 44em) {
   html {
@@ -161,7 +162,8 @@
     width: 80%;
     grid-row: 4/5;
   }
-  .isp-form {
+  .isp-form,
+  .oem-form {
     width: 100%;
   }
   .footer {

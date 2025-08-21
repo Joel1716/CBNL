@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export default function Oem() {
   const heroInfo = {
     page: "oem-hero",
-    pageHeading: "Collaborate With Us to Power Next-Generation OEM Products",
+    pageHeading: "Join Us to Power Next-Generation OEM Products",
   };
   const [status, setStatus] = useState("");
 

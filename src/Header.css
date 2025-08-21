@@ -73,7 +73,7 @@ header ul li a:hover {
 .dropdown-content {
   display: flex;
   flex-direction: column;
-  gap: 1.4rem;
+  gap: 2.3rem;
   background-color: white;
   box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
   padding: 1.5rem 2rem;
@@ -82,7 +82,9 @@ header ul li a:hover {
 }
 .dropdown-content a {
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  width: 10rem;
+  font-weight: bold;
 }
 /* .dropdown-content {
   display: none;

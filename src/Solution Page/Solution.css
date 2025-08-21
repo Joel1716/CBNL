@@ -1,7 +1,7 @@
 .solution-hero {
   background: url("/solution.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center left;
   height: 80vh;
   margin-bottom: 5rem;
 }
