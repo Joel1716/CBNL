@@ -1,5 +1,5 @@
 .oem-hero {
-  background: url("./OEM.jpg");
+  background: url("/OEM.jpg");
   background-size: cover;
   background-position: top;
   height: 80vh;
