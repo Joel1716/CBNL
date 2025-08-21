@@ -55,7 +55,11 @@ export default function Exec() {
           {execInfo.map((exec) => {
             return (
               <div className="exec-box">
-                <img className="exec-img" src={exec.img} alt="" />
+                <img
+                  className="exec-img"
+                  src={exec.img}
+                  alt={`${exec.name}(${exec.role})`}
+                />
                 <p className="exec-name">{exec.name}</p>
                 <p className="exec-role">{exec.role}</p>
               </div>

@@ -14,12 +14,14 @@ export default function About() {
       name: "Executives",
       heading: "Meet our Executive Team",
       link: "/Exec",
+      alt: "Three executives sitting side by side with a table with their hands on it making a fist",
     },
     {
       img: "Policy.webp",
       name: "Policy",
       heading: "Values We Follow",
       link: "/Policy",
+      alt: "Signing on a paper",
     },
   ];
   return (
@@ -65,7 +67,10 @@ export default function About() {
         <div className="vision-container">
           <h2>Our Vision</h2>
           <div className="vision">
-            <img src="Visions.png" alt="" />
+            <img
+              src="Visions.png"
+              alt="Animation of a man looking up with a small handheld telescope to a mountain that has a bullseye"
+            />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               doloremque, quasi natus, temporibus repudiandae quae odit fugit
@@ -89,17 +94,19 @@ export default function About() {
               inventore, et repellat corporis mollitia minima expedita! Cum,
               consectetur quae!
             </p>
-            <img src="Mission.jpg" alt="" />
+            <img
+              src="Mission.jpg"
+              alt="Round globe with blue and red dots on them"
+            />
           </div>
         </div>
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">
           {pageDirection.map((direction) => (
             <div className="each-page">
-              <img src={direction.img} alt="" />
+              <img src={direction.img} alt={direction.alt} />
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
-                {/* <p className="message">{direction.message}</p> */}
                 <Link className="link-button" to={direction.link}>
                   {direction.name}
                 </Link>

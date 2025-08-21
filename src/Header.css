@@ -79,12 +79,12 @@ header ul li a:hover {
   padding: 1.5rem 2rem;
   position: absolute;
   top: 50px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 .dropdown-content a {
   color: black;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   width: 10rem;
-  font-weight: bold;
 }
 /* .dropdown-content {
   display: none;

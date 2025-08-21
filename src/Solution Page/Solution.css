@@ -21,9 +21,10 @@
 .row {
   gap: 3rem;
 }
-.row .solution-info {
+.row:nth-child(even) .image-box {
   grid-row: 1/2;
 }
+
 .image-box {
   display: flex;
   justify-content: center;
@@ -54,6 +55,12 @@
 @media (max-width: 54em) {
   .all-solutions {
     row-gap: 7rem;
+  }
+  .row .solution-info {
+    grid-row: 1/2;
+  }
+  .row:nth-child(even) .image-box {
+    grid-row: 2/3;
   }
 }
 @media (max-width: 26em) {

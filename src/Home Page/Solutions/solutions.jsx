@@ -2,22 +2,25 @@ import "./solutions.css";
 export default function Solutions() {
   const solutions = [
     {
-      img: <img src="Rural.webp" alt="Great Barrier Reef, Australia" />,
+      img: "Rural.webp",
       heading: "Rural Connectivity",
       message:
         "Affordable broadband solutions that deliver strong, stable internet to remote and underserved areas.",
+      alt: "Rural Area",
     },
     {
-      img: <img src="Enterprise.webp" alt="Great Barrier Reef, Australia" />,
+      img: "Enterprise.webp",
       heading: "Enterprise Access",
       message:
         "Dedicated high-speed internet for businesses, supporting secure operations and real-time connectivity.",
+      alt: "Top of a white Tower with rectangular antennas on them in an environment with lots of trees",
     },
     {
-      img: <img src="mobile.webp" alt="Great Barrier Reef, Australia" />,
+      img: "mobile.webp",
       heading: "Mobile Backhaul",
       message:
         "Reliable wireless links that connect mobile towers to the core network, expanding coverage and boosting capacity.",
+      alt: "Tower with circular dishes and rectangular antennas on them",
     },
   ];
   return (
@@ -33,7 +36,7 @@ export default function Solutions() {
         {solutions.map((solution) => (
           <li>
             <figure>
-              {solution.img}
+              <img src={solution.img} />
               <figcaption>
                 <main className="solution-main">
                   <h3>{solution.heading}</h3>

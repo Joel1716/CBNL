@@ -35,7 +35,11 @@ export default function Footer() {
     <div className="footer-section">
       <div className="footer">
         <div className="company-info">
-          <img className="company-logo" src="CBNL Logo.png" alt="" />
+          <img
+            className="company-logo"
+            src="CBNL Logo.png"
+            alt="Company Logo"
+          />
           <p>
             CBNL delivers high-performance broadband infrastructure and
             solutions across Africa

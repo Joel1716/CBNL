@@ -27,6 +27,44 @@ export default function Clients() {
       },
     },
   ];
+  const clients = [
+    {
+      img: "MTN.jpeg",
+      alt: "MTN Logo",
+    },
+    {
+      img: "9-mobile.png",
+      alt: "9-mobile Logo",
+    },
+    {
+      img: "Unitel.jpg",
+      alt: "Unitel Logo",
+    },
+    {
+      img: "safaricom.png",
+      alt: "",
+    },
+    {
+      img: "Liquid.png",
+      alt: "Liquid Logo",
+    },
+    {
+      img: "Telkom.png",
+      alt: "Telkom Logo",
+    },
+    {
+      img: "INQ.png",
+      alt: "INQ Logo",
+    },
+    {
+      img: "airtel.png",
+      alt: "airtel Logo",
+    },
+    {
+      img: "vodacom.png",
+      alt: "vodacom Logo",
+    },
+  ];
   return (
     <section className="clients-section">
       <div>
@@ -83,63 +121,14 @@ export default function Clients() {
               </button>
             }
           >
-            <div>
-              <img src="MTN.jpeg" alt="" />
-            </div>
-            <div>
-              <img src="9-mobile.png" alt="" />
-            </div>
-            <div>
-              <img src="Unitel.jpg" alt="" />
-            </div>
-            <div>
-              <img src="safaricom.png" alt="" />
-            </div>
-            <div>
-              <img src="Liquid.png" alt="" />
-            </div>
-            <div>
-              <img src="Telkom.png" alt="" />
-            </div>
-            <div>
-              <img src="INQ.png" alt="" />
-            </div>
-            <div>
-              <img src="airtel.png" alt="" />
-            </div>
-            <div>
-              <img src="vodacom.png" alt="" />
-            </div>
+            {clients.map((client) => (
+              <div>
+                <img src={client.img} alt={client.alt} />
+              </div>
+            ))}
           </Slide>
         </div>
       </div>
     </section>
   );
 }
-
-{
-  /* <div className="slideshow-container flex-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-        >
-          <path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path>
-        </svg>
-        <div className="slideshow">
-          <img src="MTN.png" alt="" />
-          <img src="INQ.png" alt="" />
-          <img src="Liquid.png" alt="" />
-          {/* <img src="Telkom.png" alt="" />
-          <img src="Unitel.jpg" alt="" />
-          <img src="vodacom.png" alt="" /> */
-}
-//   </div>
-//   <svg
-//     xmlns="http://www.w3.org/2000/svg"
-//     viewBox="0 0 24 24"
-//     fill="currentColor"
-//   >
-//     <path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z"></path>
-//   </svg>
-// </div> */}

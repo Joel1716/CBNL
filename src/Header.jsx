@@ -34,7 +34,7 @@ export default function StickyHeader() {
           burgerClick ? "open" : "close"
         }`}
       >
-        <img className="company-logo" src="CBNL Logo.png" alt="" />
+        <img className="company-logo" src="CBNL Logo.png" alt="Company Logo" />
         <nav>
           <ul className="flex-center">
             <li>

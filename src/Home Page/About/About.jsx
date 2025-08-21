@@ -59,7 +59,7 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="about grid-two-cols">
         <div className="img-box">
-          <img src="./Tower.webp" alt="" />
+          <img src="./Tower.webp" alt="A Tower with blue background" />
         </div>
         <div className="info-box">
           <h2>About us</h2>

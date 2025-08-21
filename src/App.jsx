@@ -1,4 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Home from "./Home Page/Home.jsx";
 import About from "./About Page/About.jsx";
 import Solution from "./Solution Page/Solution";
@@ -12,9 +14,20 @@ import Oem from "./Contact/OEM/oem.jsx";
 import Footer from "./Footer/Footer.jsx";
 import "./App.css";
 import "./queries.css";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top (0,0 coordinates)
+  }, [pathname]); // Rerun the effect whenever the pathname changes
+
+  return null; // This component doesn't render any UI
+};
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <StickyHeader />
       <Routes>
         <Route path="/" element={<Home />} />
