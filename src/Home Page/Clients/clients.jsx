@@ -46,7 +46,7 @@ export default function Clients() {
             arrows={true}
             autoplay={true}
             infinite={true}
-            duration="2000"
+            duration="1000"
             responsive={responsiveSettings}
             nextArrow={
               <button

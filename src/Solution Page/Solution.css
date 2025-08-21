@@ -14,8 +14,15 @@
   width: 100%;
   max-width: 120rem;
   margin: 5rem auto 0;
-  column-gap: 3rem;
-  row-gap: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.row {
+  gap: 3rem;
+}
+.row .solution-info {
+  grid-row: 1/2;
 }
 .image-box {
   display: flex;
