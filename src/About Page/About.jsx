@@ -70,6 +70,7 @@ export default function About() {
             <img
               src="Visions.png"
               alt="Animation of a man looking up with a small handheld telescope to a mountain that has a bullseye"
+              loading="lazy"
             />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -97,6 +98,7 @@ export default function About() {
             <img
               src="Mission.jpg"
               alt="Round globe with blue and red dots on them"
+              loading="lazy"
             />
           </div>
         </div>
@@ -104,7 +106,7 @@ export default function About() {
         <div className="other-pages grid-two-cols">
           {pageDirection.map((direction) => (
             <div className="each-page">
-              <img src={direction.img} alt={direction.alt} />
+              <img src={direction.img} alt={direction.alt} loading="lazy" />
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
                 <Link className="link-button" to={direction.link}>

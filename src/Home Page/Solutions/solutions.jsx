@@ -1,4 +1,5 @@
 import "./solutions.css";
+import { Link } from "react-router-dom";
 export default function Solutions() {
   const solutions = [
     {
@@ -36,14 +37,16 @@ export default function Solutions() {
         {solutions.map((solution) => (
           <li>
             <figure>
-              <img src={solution.img} />
+              <img src={solution.img} loading="lazy" />
               <figcaption>
                 <main className="solution-main">
                   <h3>{solution.heading}</h3>
                   <p>{solution.message}</p>
                 </main>
                 <footer>
-                  <button>Read More</button>
+                  <button>
+                    <Link to="/solution">Read More</Link>
+                  </button>
                 </footer>
               </figcaption>
             </figure>

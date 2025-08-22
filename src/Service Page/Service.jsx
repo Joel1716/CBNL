@@ -135,8 +135,8 @@ export default function Service() {
             implementation support and project management; to taking complete
             responsibility for design, build and transfer, as a turnkey service.
           </p>
-          <div className="rf-container grid-two-cols">
-            <div className="rf-info">
+          <div className="deployment-outer-container">
+            <DeplomentServices img="RF.webp" alt="A Tower">
               <h3 className="text-center">Network RF Services</h3>
               <ul>
                 <div>
@@ -161,16 +161,11 @@ export default function Service() {
                   <li className="main-info">Optimization</li>
                 </div>
               </ul>
-            </div>
-            <div className="rf-img-box">
-              <img src="rf.jpg" alt="" />
-            </div>
-          </div>
-          <div className="fibre-container grid-two-cols">
-            <div className="fibre-img-box">
-              <img src="fibres.jpg" alt="" />
-            </div>
-            <div className="fibre-info">
+            </DeplomentServices>
+            <DeplomentServices
+              img="Fibres.webp"
+              alt="FIbres connected in an ODF"
+            >
               <h3 className="text-center">Fibre Optics</h3>
               <ul>
                 <li className="main-info">
@@ -193,7 +188,44 @@ export default function Service() {
                   fibre deployment.
                 </li>
               </ul>
-            </div>
+            </DeplomentServices>
+            <DeplomentServices img="VSAT.webp" alt="Satellite Dishes">
+              <h3 className="text-center">VSAT Sytems</h3>
+              <ul>
+                <li className="main-info">
+                  We plan, install and manage VSAT Systems and wireless
+                  broadband internet services on different satellite platforms.
+                  We are currently Africa service partners to Avanti
+                </li>
+                <li className="main-info">
+                  To date, our engineers have installed over 500 satellite earth
+                  stations across Nigeria.
+                </li>
+              </ul>
+            </DeplomentServices>
+            <DeplomentServices img="BTS.webp" alt="Top of a Tower">
+              <h3 className="text-center">Base Station(BTS)</h3>
+              <ul>
+                <li className="main-info">
+                  Our engineers are trained and certified to deploy and support
+                  RBS, Tx and power equipment from the world’s top OEMs
+                  including Ericsson, Huawei, ZTE and Emerson.
+                </li>
+                <li className="main-info">
+                  We carry out site BTS construction works for greenfield and
+                  rooftop turnkey sites – procurement, site acquisition, TSS,
+                  design, implementation and handover.
+                </li>
+                <li className="main-info">
+                  We install, commission, integrate, and maintain base
+                  transmitting stations for 2G, 3G and LTE services.
+                </li>
+                <li className="main-info">
+                  We carryout RF optimization of BTS sites from single and
+                  cluster site verifications.
+                </li>
+              </ul>
+            </DeplomentServices>
           </div>
           <div className="bts-container"></div>
         </div>
@@ -214,5 +246,16 @@ export default function Service() {
         </div>
       </main>
     </>
+  );
+}
+
+function DeplomentServices({ img, alt, children }) {
+  return (
+    <div className="deployment-inner-container grid-two-cols">
+      <div className="deployment-info">{children}</div>
+      <div className="deployment-img-box">
+        <img src={img} alt={alt} loading="lazy" />
+      </div>
+    </div>
   );
 }

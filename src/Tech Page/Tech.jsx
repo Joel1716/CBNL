@@ -9,18 +9,54 @@ export default function Tech() {
       "Powering high-capacity, low-latency networks that keep your customers connected and your business ahead.",
   };
   const techs = [
-    "avanti.png",
-    "aviat.png",
-    "ceragon.png",
-    "emerson.png",
-    "ericsson.jpg",
-    "Huawei.png",
-    "Newtec.png",
-    "nokia.jpg",
-    "raisecom.png",
-    "siklu.png",
-    "tarana.png",
-    "ZTE.png",
+    {
+      img: "avanti.png",
+      alt: "Avanti Logo",
+    },
+    {
+      img: "aviat.png",
+      alt: "Aviat Logo",
+    },
+    {
+      img: "ceragon.png",
+      alt: "Ceragon Logo",
+    },
+    {
+      img: "emerson.png",
+      alt: "Emerson Logo",
+    },
+    {
+      img: "ericsson.jpg",
+      alt: "Ericsson Logo",
+    },
+    {
+      img: "Huawei.png",
+      alt: "Huawei Logo",
+    },
+    {
+      img: "Newtec.png",
+      alt: "Newtec Logo",
+    },
+    {
+      img: "nokia.jpg",
+      alt: "Nokia Logo",
+    },
+    {
+      img: "raisecom.png",
+      alt: "Raisecom Logo",
+    },
+    {
+      img: "siklu.png",
+      alt: "Siklu Logo",
+    },
+    {
+      img: "tarana.png",
+      alt: "Tarana Logo",
+    },
+    {
+      img: "ZTE.png",
+      alt: "ZTE Logo",
+    },
   ];
   return (
     <>
@@ -46,7 +82,7 @@ export default function Tech() {
             {techs.map((tech) => {
               return (
                 <div>
-                  <img src={`./${tech}`} alt="" />
+                  <img src={`./${tech.img}`} alt={tech.alt} loading="lazy" />
                 </div>
               );
             })}

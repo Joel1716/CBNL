@@ -109,14 +109,14 @@
     transition: 0.15s;
   }
   .open .hamburger div:first-child {
-    transform: rotate(50deg) translate(8px, 5px);
+    transform: rotate(50deg) translate(10px, 5px);
   }
   .open .hamburger div:nth-child(2) {
     opacity: 0;
     transition: 0.01s;
   }
   .open .hamburger div:last-child {
-    transform: rotate(-50deg) translate(6px, -5px);
+    transform: rotate(-50deg) translate(10px, -5px);
   }
   .stats-container {
     grid-template-columns: repeat(2, 1fr);

@@ -29,7 +29,7 @@ export default function StickyHeader() {
           hidden: { y: "-100%" },
         }}
         animate={hidden ? "hidden" : "visible"}
-        transition={{ duration: 0.35, ease: "easeInOut" }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
         className={`flex-center ${scrolled ? "nav-scrolled" : ""} ${
           burgerClick ? "open" : "close"
         }`}
