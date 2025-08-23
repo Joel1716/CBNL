@@ -30,6 +30,9 @@
   color: var(--header-black);
   line-height: 1.3;
 }
+.services-info p {
+  font-size: 1.6rem;
+}
 .services-offered {
   row-gap: 5rem;
   column-gap: 2rem;

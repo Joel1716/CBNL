@@ -1,0 +1,55 @@
+.training-hero {
+  background-image: url("/Training.webp");
+  background-size: cover;
+  background-position: 50% 40%;
+  height: 80vh;
+}
+.training-hero::before {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.course-container {
+  margin-top: 3rem;
+  border-bottom: 1px solid black;
+}
+.course-container h2 {
+  margin-bottom: 2rem;
+}
+.courses div {
+  cursor: pointer;
+}
+.course-heading {
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 1.5rem 1.5rem;
+}
+.course-heading p {
+  font-size: 1.8rem;
+  color: black;
+}
+.info-heading {
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.ZFS-info {
+  margin-bottom: 2rem;
+}
+.courses .course-info {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 0px;
+  padding: 0 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: padding 0.2s;
+}
+.courses.courseClick .course-info {
+  height: 100%;
+  padding: 1.5rem;
+  opacity: 1;
+  visibility: visible;
+  transition: padding 0.2s;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}

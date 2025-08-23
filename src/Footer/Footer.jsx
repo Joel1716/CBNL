@@ -27,8 +27,16 @@ export default function Footer() {
       name: "Executives",
     },
     {
+      link: "/Training",
+      name: "Training",
+    },
+    {
       link: "/Policy",
       name: "Policy",
+    },
+    {
+      link: "/Support",
+      name: "Support",
     },
   ];
   return (

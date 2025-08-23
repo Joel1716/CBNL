@@ -1,0 +1,23 @@
+.support-hero {
+  background-image: url("/Support.webp");
+  background-size: cover;
+  background-position: 50% 15%;
+  height: 80vh;
+}
+.support-links {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  row-gap: 3rem;
+  justify-items: center;
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+.support-links a {
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+.support-links a:hover {
+  color: var(--main-blue-color);
+}

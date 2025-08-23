@@ -61,6 +61,7 @@ export default function Services() {
         <div className="services-info">
           <h2>| Our services</h2>
           <h3>Explore Our Best Services</h3>
+          <p>Click the box to see our services</p>
         </div>
         <div className="services-offered grid-two-cols">
           {services.map((service) => (

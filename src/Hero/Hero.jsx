@@ -1,4 +1,5 @@
 import "./Hero.css";
+import { Link } from "react-router-dom";
 export default function Hero({ page, pageHeading, pageSubText, buttonText }) {
   return (
     <>
@@ -8,7 +9,7 @@ export default function Hero({ page, pageHeading, pageSubText, buttonText }) {
           {pageSubText && <p>{pageSubText}</p>}
           {buttonText && (
             <button>
-              <a href="#">{buttonText}</a>
+              <Link to="/services">Discover Our Services</Link>
             </button>
           )}
         </div>

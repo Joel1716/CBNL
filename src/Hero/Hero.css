@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   position: relative;
   color: white;
+  margin-bottom: 5rem;
 }
 .hero-section::before {
   position: absolute;

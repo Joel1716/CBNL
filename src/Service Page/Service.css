@@ -126,10 +126,14 @@
 
 @media (max-width: 54em) {
   .deployment-info {
-    grid-row: 1/2;
+    grid-row: 2/3;
+  }
+  .deployment-inner-container .deployment-img-box img,
+  .deployment-inner-container:nth-child(even) .deployment-img-box img {
+    height: 40rem;
   }
   .deployment-inner-container:nth-child(even) .deployment-img-box {
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
   .deployment-inner-container:first-child img {
     object-position: bottom;
