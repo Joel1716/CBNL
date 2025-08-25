@@ -52,9 +52,9 @@ export default function Exec() {
           </p>
         </div>
         <div className="exec-container">
-          {execInfo.map((exec) => {
+          {execInfo.map((exec, value) => {
             return (
-              <div className="exec-box">
+              <div key={value} className="exec-box">
                 <img
                   className="exec-img"
                   src={exec.img}

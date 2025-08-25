@@ -1,6 +1,7 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+
 import Home from "./Home Page/Home.jsx";
 import About from "./About Page/About.jsx";
 import Solution from "./Solution Page/Solution";
@@ -29,24 +30,27 @@ const ScrollToTop = () => {
   return null; // This component doesn't render any UI
 };
 export default function App() {
+  const [navClick, setNavClick] = useState(null);
   return (
-    <Router>
-      <ScrollToTop />
-      <StickyHeader />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/solution" element={<Solution />} />
-        <Route path="/services" element={<Service />} />
-        <Route path="/Tech" element={<Tech />} />
-        <Route path="/Exec" element={<Exec />} />
-        <Route path="/Training" element={<Training />} />
-        <Route path="/Isp" element={<Isp />} />
-        <Route path="/Oem" element={<Oem />} />
-        <Route path="/Policy" element={<Policy />} />
-        <Route path="/Support" element={<Support />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div onClick={() => navClick && setNavClick(null)}>
+      <Router>
+        <ScrollToTop />
+        <StickyHeader navClick={navClick} onNavClick={setNavClick} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/solution" element={<Solution />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/Tech" element={<Tech />} />
+          <Route path="/Exec" element={<Exec />} />
+          <Route path="/Training" element={<Training />} />
+          <Route path="/Isp" element={<Isp />} />
+          <Route path="/Oem" element={<Oem />} />
+          <Route path="/Policy" element={<Policy />} />
+          <Route path="/Support" element={<Support />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }

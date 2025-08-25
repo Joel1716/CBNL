@@ -83,9 +83,9 @@ export default function Solution() {
         <div className="solutions-container">
           <h2>Our Solutions</h2>
           <div className="all-solutions">
-            {solutions.map((solution) => {
+            {solutions.map((solution, value) => {
               return (
-                <div className="row grid-two-cols">
+                <div key={value} className="row grid-two-cols">
                   <div className="solution-info">
                     <h3>{solution.heading}</h3>
                     <h4>{solution.subheading}</h4>

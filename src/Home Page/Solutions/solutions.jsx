@@ -34,8 +34,8 @@ export default function Solutions() {
         </p>
       </div>
       <div className="gallery">
-        {solutions.map((solution) => (
-          <li>
+        {solutions.map((solution, value) => (
+          <li key={value}>
             <figure>
               <img src={solution.img} loading="lazy" />
               <figcaption>

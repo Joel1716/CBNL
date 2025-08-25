@@ -121,8 +121,8 @@ export default function Clients() {
               </button>
             }
           >
-            {clients.map((client) => (
-              <div>
+            {clients.map((client, value) => (
+              <div key={value}>
                 <img src={client.img} alt={client.alt} />
               </div>
             ))}

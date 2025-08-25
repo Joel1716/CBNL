@@ -64,8 +64,8 @@ export default function Services() {
           <p>Click the box to see our services</p>
         </div>
         <div className="services-offered grid-two-cols">
-          {services.map((service) => (
-            <Link to="/services">
+          {services.map((service, value) => (
+            <Link to="/services" key={value}>
               {" "}
               <div className="service">
                 <div className="service-icon">{service.icon}</div>

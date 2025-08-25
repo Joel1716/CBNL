@@ -10,12 +10,9 @@ header {
   right: 0;
   z-index: 99;
   transition: 0.4s;
-  /* position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   z-index: 999;
-   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); */
+}
+header.nav-shown {
+  background-color: white;
 }
 .company-logo {
   width: 20rem;
@@ -33,6 +30,7 @@ header ul {
 header ul li {
   list-style: none;
 }
+header ul li,
 header ul li a {
   font-size: 1.7rem;
   text-transform: uppercase;
@@ -41,6 +39,7 @@ header ul li a {
   position: relative;
   color: black;
 }
+header ul li::before,
 header ul li a::before {
   content: "";
   width: 0%;
@@ -51,41 +50,47 @@ header ul li a::before {
   height: 0.3rem;
   transition: width var(--def-transition-duration);
 }
-header ul li a:hover::before {
+header ul li a:hover::before,
+header ul li:hover::before {
   width: 100%;
 }
-header ul li a:hover {
+header ul li a:hover,
+header ul li:hover {
   color: var(--main-blue-color);
 }
 .hamburger {
   display: none;
 }
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  align-items: center;
-  position: relative;
-}
 .dropdown button {
   color: white;
 }
-.dropdown-content {
+/* NAV DROPDOWN */
+.nav-dropdown {
+  position: absolute;
+  background-color: white;
+  left: 30vmax;
+  top: 9.8rem;
+  right: 0;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  border-top: 1px solid #dbdbdb;
+}
+.nav-dropdown img {
+  width: 25rem;
+  height: 17rem;
+  object-fit: cover;
+}
+.nav-dropdown-content ul {
   display: flex;
   flex-direction: column;
-  gap: 2.3rem;
-  background-color: white;
-  box-shadow: 0 4px 5px rgb(0, 0, 0, 0.2);
-  padding: 1.5rem 2rem;
-  position: absolute;
-  top: 50px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  gap: 2rem;
+  margin-top: 1rem;
 }
-.dropdown-content a {
-  color: black;
+.nav-dropdown-content li a {
   font-size: 1.8rem;
-  width: 10rem;
+  text-transform: none;
 }
-/* .dropdown-content {
+.extra-links {
   display: none;
-} */
+}

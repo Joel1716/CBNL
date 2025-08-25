@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "./Header.css";
-export default function StickyHeader() {
+export default function StickyHeader({ navClick, onNavClick }) {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [buttonClick, setButtonClick] = useState(false);
   const [burgerClick, setBurgerClick] = useState(false);
+  const [pageInfo, setPageInfo] = useState({
+    img: "",
+    pages: [],
+    pageLink: [],
+  });
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious();
     if (latest > previous && latest > 150) {
@@ -17,10 +22,14 @@ export default function StickyHeader() {
     }
     setScrolled(latest > 30);
     if (hidden) {
-      setButtonClick(false);
+      onNavClick(null);
       setBurgerClick(false);
     }
   });
+  const location = useLocation();
+  useEffect(() => {
+    setBurgerClick(false);
+  }, [location]);
   return (
     <>
       <motion.header
@@ -32,38 +41,84 @@ export default function StickyHeader() {
         transition={{ duration: 0.2, ease: "easeInOut" }}
         className={`flex-center ${scrolled ? "nav-scrolled" : ""} ${
           burgerClick ? "open" : "close"
-        }`}
+        } ${navClick ? "nav-shown" : ""}`}
       >
         <img className="company-logo" src="CBNL Logo.png" alt="Company Logo" />
         <nav>
           <ul className="flex-center">
-            <li>
+            <li
+              onClick={() => {
+                onNavClick(null);
+              }}
+            >
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li
+              className={navClick === "about" ? "about-link" : ""}
+              onClick={() => {
+                onNavClick(navClick === "about" ? null : "about");
+                setPageInfo({
+                  img: "/about.webp",
+                  pages: ["About Us", "Executives", "Policy"],
+                  pageLink: ["/about", "/Exec", "/Policy"],
+                });
+              }}
+            >
+              About
+              {navClick === "about" && <ExtraLinks pageInfo={pageInfo} />}
             </li>
-            <li>
-              <Link to="/services">Services</Link>
+            <li
+              className={navClick === "services" ? "service-link" : ""}
+              onClick={() => {
+                onNavClick(navClick === "services" ? null : "services");
+                setPageInfo({
+                  img: "/services.webp",
+                  pages: ["Services", "Training"],
+                  pageLink: ["/services", "/Training"],
+                });
+              }}
+            >
+              Services
+              {navClick === "services" && <ExtraLinks pageInfo={pageInfo} />}
             </li>
-            <li>
-              <Link to="/solution">Solution</Link>
+            <li
+              className={navClick === "solution" ? "solution-link" : ""}
+              onClick={() => {
+                onNavClick(navClick === "solution" ? null : "solution");
+                setPageInfo({
+                  img: "/solution.webp",
+                  pages: ["Solution", "Technologies"],
+                  pageLink: ["/solution", "/Tech"],
+                });
+              }}
+            >
+              Solution
+              {navClick === "solution" && <ExtraLinks pageInfo={pageInfo} />}
             </li>
           </ul>
+          {navClick === "about" ||
+          navClick === "services" ||
+          navClick === "solution" ||
+          navClick === "contact" ? (
+            <DropDown pageInfo={pageInfo} />
+          ) : (
+            ""
+          )}
           <div className="dropdown">
             <button
-              onClick={() => setButtonClick(!buttonClick)}
-              className="dropbtn"
+              className={`${navClick === "contact" ? "contact-link" : ""}`}
+              onClick={() => {
+                onNavClick(navClick === "contact" ? null : "contact");
+                setPageInfo({
+                  img: "/Support.webp",
+                  pages: ["For ISPs", "For OEMs", "Careers", "Support"],
+                  pageLink: ["/ISP", "/OEM", "/", "Support"],
+                });
+              }}
             >
               Contact Us
+              {navClick === "contact" && <ExtraLinks pageInfo={pageInfo} />}
             </button>
-            {buttonClick && (
-              <div className="dropdown-content">
-                <Link to="/Isp">For ISPs</Link>
-                <Link to="/Oem">For OEMs</Link>
-                <Link to="/careers">Careers</Link>
-              </div>
-            )}
           </div>
         </nav>
         <div className="hamburger" onClick={() => setBurgerClick(!burgerClick)}>
@@ -73,5 +128,39 @@ export default function StickyHeader() {
         </div>
       </motion.header>
     </>
+  );
+}
+
+function DropDown({ pageInfo: { img, pageLink, pages } }) {
+  return (
+    <div className="nav-dropdown">
+      <img src={img} alt="" />
+      <div className="nav-dropdown-content">
+        <ul>
+          {pageLink.map((link, value) => {
+            return (
+              <li key={value}>
+                <Link to={link}>{pages[value]}</Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+function ExtraLinks({ pageInfo: { pageLink, pages } }) {
+  return (
+    <div className="extra-links">
+      <ul>
+        {pageLink.map((link, value) => {
+          return (
+            <li key={value}>
+              <Link to={link}>{pages[value]}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }

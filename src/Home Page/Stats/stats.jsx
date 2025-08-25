@@ -35,9 +35,9 @@ export default function Stats() {
         <p>Our numbers reflect our commitment to excellence</p>
       </div>
       <div className="stats-container">
-        {stats.map((stat) => {
+        {stats.map((stat, value) => {
           return (
-            <div className="stats flex-center">
+            <div key={value} className="stats flex-center">
               <p className="stat-number">
                 <Counter
                   number={stat.numbers}

@@ -41,9 +41,9 @@ export default function Cta() {
           </p>
         </div>
         <div className="button-container">
-          {targets.map((target) => {
+          {targets.map((target, value) => {
             return (
-              <div>
+              <div key={value}>
                 <h3 className="target-heading">{target.heading}</h3>
                 <button className="target-button">
                   <Link to={target.to}>{target.buttonText}</Link>

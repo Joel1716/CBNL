@@ -57,9 +57,9 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <nav>
             <ul className="grid-two-cols">
-              {links.map((eachLink) => {
+              {links.map((eachLink, value) => {
                 return (
-                  <li>
+                  <li key={value}>
                     <Link to={eachLink.link}>{eachLink.name}</Link>
                   </li>
                 );

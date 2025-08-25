@@ -75,6 +75,9 @@
   header {
     justify-content: space-between;
   }
+  .company-logo {
+    z-index: 99999;
+  }
   header nav {
     display: none;
   }
@@ -83,18 +86,90 @@
     position: absolute;
     right: 0;
     top: 0;
+    left: 0;
     /* border: 1px solid var(--main-blue-color); */
-    width: 45%;
-    padding: 9rem 0 2rem 0;
+    padding: 12rem 0 2rem 0;
     gap: 2.5rem;
     background-color: white;
+    align-items: start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+    justify-content: flex-start;
   }
-  header nav ul {
-    gap: 4rem;
+  header.open nav ul {
+    gap: 2rem;
+    margin: 0;
+    width: 100%;
+  }
+  header ul li {
+    border-bottom: 1px solid Rgb(193, 193, 193);
+    border-top: 1px solid rgb(193, 193, 193);
+    background-color: var(--background-color);
+    padding: 1rem 0;
+    padding-left: 2rem;
+    width: 100%;
+    position: relative;
+  }
+  .dropdown {
+    position: relative;
+    width: 100%;
+  }
+  .dropdown .extra-links ul {
+    margin: 1rem 0;
+    width: auto;
+  }
+  .dropdown .extra-links {
+    top: 4.3rem;
+  }
+  .dropdown button {
+    margin-left: 2rem;
+  }
+  .extra-links {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4rem;
+    border-top: 2px solid var(--main-blue-color);
+    border-bottom: 2px solid var(--main-blue-color);
+    align-items: start;
+    justify-content: start;
+  }
+  .extra-links li {
+    border: none;
+    background-color: white;
+    padding: 1.5rem 0 1rem 2rem;
+  }
+  header.nav-shown .about-link {
+    margin-bottom: 11.8rem;
+  }
+  header.nav-shown .service-link,
+  header.nav-shown .solution-link {
+    margin-bottom: 7.3rem;
+  }
+  header ul li a::before,
+  header ul li::before {
+    display: none;
+  }
+  header.nav-shown .nav-dropdown-content ul {
+    gap: 1rem;
   }
   header nav ul,
   header nav {
     flex-direction: column;
+  }
+  .nav-dropdown {
+    background-color: transparent;
+    border: none;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  .nav-dropdown img {
+    display: none;
+  }
+  header.nav-shown {
+    background-color: none;
   }
   .hamburger {
     display: flex;
@@ -132,10 +207,6 @@
   .footer a {
     font-size: 1.9rem;
   }
-  .dropdown-content a {
-    font-size: 1.9rem;
-    font-weight: bold;
-  }
 }
 @media (max-width: 44em) {
   html {
@@ -153,9 +224,11 @@
   .service {
     gap: 1.2rem;
   }
+  .hero-info {
+    margin-top: 3rem;
+  }
   .hero-info p {
     line-height: 1.5;
-    margin-top: 1rem;
   }
   .contacts .address p,
   .company-info p {

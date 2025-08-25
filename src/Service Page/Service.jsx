@@ -86,10 +86,10 @@ export default function Service() {
         <div className="services-container">
           <h2>Our Services</h2>
           <div className="all-services grid-two-cols" ref={gridRef}>
-            {services.map((service, i) => {
-              const rowStart = i - (i % cols);
+            {services.map((service, value) => {
+              const rowStart = value - (value % cols);
               const rowEnd = Math.min(services.length, rowStart + cols);
-              const isEndOfRow = i === rowEnd - 1;
+              const isEndOfRow = value === rowEnd - 1;
               const selectedInThisRow =
                 selected !== null && selected >= rowStart && selected < rowEnd;
 
@@ -98,13 +98,17 @@ export default function Service() {
                   {/* CARD (grid item) */}
                   <div
                     className="each-service"
-                    onClick={() => setSelected(selected === i ? null : i)}
+                    onClick={() =>
+                      setSelected(selected === value ? null : value)
+                    }
                   >
                     <h3 className="text-center">{service.title}</h3>
                     <p className="short-message text-center">
                       {service.shortMessage}
                     </p>
-                    <p className="service-sign">{selected === i ? "-" : "+"}</p>
+                    <p className="service-sign">
+                      {selected === value ? "-" : "+"}
+                    </p>
                   </div>
 
                   {/* ROW PANEL (grid item that spans ALL columns) */}
@@ -227,7 +231,6 @@ export default function Service() {
               </ul>
             </DeplomentServices>
           </div>
-          <div className="bts-container"></div>
         </div>
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">

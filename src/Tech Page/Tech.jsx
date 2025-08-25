@@ -79,9 +79,9 @@ export default function Tech() {
         <div className="tech-container">
           <h2>Our Technologies</h2>
           <div className="tech">
-            {techs.map((tech) => {
+            {techs.map((tech, value) => {
               return (
-                <div>
+                <div key={value}>
                   <img src={`./${tech.img}`} alt={tech.alt} loading="lazy" />
                 </div>
               );
