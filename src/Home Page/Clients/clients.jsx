@@ -29,7 +29,7 @@ export default function Clients() {
   ];
   const clients = [
     {
-      img: "MTN.jpeg",
+      img: "MTN.svg",
       alt: "MTN Logo",
     },
     {
@@ -84,7 +84,7 @@ export default function Clients() {
             arrows={true}
             autoplay={true}
             infinite={true}
-            duration="1000"
+            duration="1500"
             responsive={responsiveSettings}
             nextArrow={
               <button

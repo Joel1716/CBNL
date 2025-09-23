@@ -1,0 +1,57 @@
+.reach-us-hero {
+  background: url("/Contact.webp");
+  background-size: cover;
+  background-position: top center;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+.reach-out-container {
+  gap: 1.5rem;
+}
+.reach-out-container label {
+  font-size: 2rem;
+  color: black;
+}
+.reach-out-container select {
+  padding: 0.5rem 0.2rem;
+  font-size: 1.8rem;
+}
+.reach-out-container option {
+  font-size: 1.8rem;
+}
+.contact-info-container {
+  background-color: white;
+  width: 60rem;
+  margin: 4rem 0 0;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.name-flag {
+  gap: 1rem;
+}
+.name-flag img {
+  width: 5rem;
+}
+.name-flag h3 {
+  font-size: 2.5rem;
+}
+.contact-info p {
+  font-size: 1.8rem;
+}
+.contact-info {
+  gap: 0.7rem;
+}
+.contact-info svg {
+  width: 2.5rem;
+  align-self: start;
+  color: var(--main-blue-color);
+}
+.contact-info-container + h2 {
+  font-size: 2rem;
+  color: green;
+}

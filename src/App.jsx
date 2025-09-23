@@ -12,8 +12,10 @@ import Policy from "./Policy/Policy.jsx";
 import Tech from "./Tech Page/Tech.jsx";
 import Isp from "./Contact/ISP/Isp.jsx";
 import Oem from "./Contact/OEM/oem.jsx";
+import ReachUs from "./Contact/ReachUs/ReachUs.jsx";
 import Training from "./Training/Training.jsx";
 import Support from "./Support/Support.jsx";
+import LocationPage from "./Location Page/LocationPage.jsx";
 // Reusables
 import StickyHeader from "./Header.jsx";
 import Footer from "./Footer/Footer.jsx";
@@ -44,9 +46,11 @@ export default function App() {
           <Route path="/Tech" element={<Tech />} />
           <Route path="/Exec" element={<Exec />} />
           <Route path="/Training" element={<Training />} />
+          <Route path="/Location" element={<LocationPage />} />
+          <Route path="/Policy" element={<Policy />} />
           <Route path="/Isp" element={<Isp />} />
           <Route path="/Oem" element={<Oem />} />
-          <Route path="/Policy" element={<Policy />} />
+          <Route path="/Reach-Us" element={<ReachUs />} />
           <Route path="/Support" element={<Support />} />
         </Routes>
         <Footer />

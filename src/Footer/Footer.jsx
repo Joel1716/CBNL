@@ -106,6 +106,9 @@ export default function Footer() {
             <div>
               <Link to="/ISP">Careers</Link>
             </div>
+            <div>
+              <Link to="/Reach-Us">Contact</Link>
+            </div>
           </div>
         </div>
       </div>

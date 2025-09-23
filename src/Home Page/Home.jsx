@@ -3,6 +3,7 @@ import About from "./About/About.jsx";
 import Services from "./Services/services.jsx";
 import Solutions from "./Solutions/solutions.jsx";
 import Stats from "./Stats/stats.jsx";
+import Location from "./Location/location.jsx";
 import Clients from "./Clients/clients.jsx";
 import Faq from "./FAQ/faq.jsx";
 import Cta from "./cta/cta.jsx";
@@ -26,6 +27,7 @@ export default function Home() {
       />
       <About />
       <Services />
+      <Location />
       <Solutions />
       <Stats />
       <Clients />

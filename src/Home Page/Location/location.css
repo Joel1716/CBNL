@@ -1,0 +1,36 @@
+.location-section {
+  padding: 0 1rem;
+  width: 98%;
+  max-width: 130rem;
+  justify-content: center;
+  margin: 0 auto 8rem;
+  gap: 0.5rem;
+}
+.location-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 3rem;
+}
+.location-heading p {
+  margin-bottom: 0.5rem;
+}
+.location-heading button {
+  align-self: start;
+}
+.location-heading h2 {
+  font-size: 3.8rem;
+  margin-bottom: 0.3rem;
+}
+.location-heading p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+}
+.map-container img {
+  width: 95%;
+}

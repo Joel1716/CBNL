@@ -205,6 +205,7 @@
   .open .hamburger div:nth-child(1) {
     transform: rotate(45deg);
     top: 50%;
+    display: grid;
   }
   .open .hamburger div:nth-child(2) {
     opacity: 0;

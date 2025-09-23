@@ -1,6 +1,5 @@
 import "./Training.css";
 import Hero from "../Hero/Hero";
-import { div, p } from "motion/react-client";
 import { useState } from "react";
 export default function Training() {
   const [courseClick, setCourseClick] = useState(false);

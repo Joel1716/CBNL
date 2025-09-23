@@ -59,8 +59,13 @@ export default function StickyHeader({ navClick, onNavClick }) {
                 onNavClick(navClick === "about" ? null : "about");
                 setPageInfo({
                   img: "/about.webp",
-                  pages: ["About Us", "Executives", "Policy"],
-                  pageLink: ["/about", "/Exec", "/Policy"],
+                  pages: [
+                    "About Us",
+                    "Executives",
+                    "Policy",
+                    "Where we operate",
+                  ],
+                  pageLink: ["/about", "/Exec", "/Policy", "/Location"],
                 });
               }}
             >
@@ -111,8 +116,8 @@ export default function StickyHeader({ navClick, onNavClick }) {
                 onNavClick(navClick === "contact" ? null : "contact");
                 setPageInfo({
                   img: "/Support.webp",
-                  pages: ["For ISPs", "For OEMs", "Careers", "Support"],
-                  pageLink: ["/ISP", "/OEM", "/", "Support"],
+                  pages: ["For ISPs", "For OEMs", "Support", "Reach Us"],
+                  pageLink: ["/ISP", "/OEM", "/Support", "/Reach-Us"],
                 });
               }}
             >

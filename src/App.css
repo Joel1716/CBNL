@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --main-blue-color: #1971c2;
+  --main-blue-color: hsl(209, 77%, 43%);
   --darker-white: rgb(239, 239, 239);
   --lighter-blue: #1c7ed6;
   --small-text-black: #333;
@@ -64,7 +64,7 @@ button:hover {
 
 /* Pages Intro Section */
 .page-main {
-  width: 93%;
+  width: 95%;
   max-width: 130rem;
   margin: 0 auto;
 }
@@ -74,6 +74,8 @@ button:hover {
 }
 .intro-text h2 {
   margin-bottom: 1rem;
+  color: var(--main-blue-color);
+  font-size: 3rem;
 }
 .intro-text p {
   color: black;

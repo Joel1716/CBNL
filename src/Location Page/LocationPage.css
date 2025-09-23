@@ -1,0 +1,109 @@
+.location-hero {
+  background: url("/Earth.webp");
+  background-size: cover;
+  background-position: center left;
+  height: 80vh;
+  margin-bottom: 5rem;
+}
+main h2 {
+  color: var(--main-blue-color);
+  font-size: 3rem;
+}
+.location-main {
+  width: 95%;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.tabs-container {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+.tabs-container div {
+  border: 1px solid var(--main-blue-color);
+  border-bottom: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: green;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+.tabs-container .active-tab {
+  margin-bottom: -0.1rem;
+  border-bottom: 3px solid #f8f9fa;
+  background-color: white;
+}
+.main-countries-container {
+  border: 1px solid var(--main-blue-color);
+  margin-bottom: 5rem;
+}
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  height: 50rem;
+  gap: 1rem;
+}
+.country-info {
+  padding: 0 1.5rem;
+}
+.country-info h3 {
+  font-size: 3.5rem;
+  color: var(--main-blue-color);
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+.country-info p {
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+.country-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 2rem;
+}
+.country-info li {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.country-info h4 {
+  font-size: 2.3rem;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 1.7rem;
+}
+.other-countries-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 2.5rem 0 5rem 0;
+}
+.other-countries-container .other-country {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid #dee2e6;
+}
+.other-country h4 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 3rem;
+}
+.expansion-country-container {
+  margin-top: 3rem;
+  background-color: #e7f5ff;
+}
+.location-main + h2 {
+  width: 95%;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+.expansion-country {
+  width: 98%;
+  max-width: 140rem;
+  margin: 0 auto;
+}

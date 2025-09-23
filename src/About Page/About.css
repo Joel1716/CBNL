@@ -36,9 +36,46 @@
   font-size: 1.8rem;
   line-height: 1.6;
 }
-
 .mission-container {
   margin: 8.5rem 0;
+}
+.certified-container {
+  margin-bottom: 8rem;
+}
+.certified-container h2 + p {
+  font-size: 1.7rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+.certified-container ul {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.certified-container li {
+  gap: 0.5rem;
+}
+.certified-container li p {
+  text-transform: lowercase;
+}
+.certified-container svg {
+  width: 3rem;
+  color: var(--main-blue-color);
+}
+.certified-container h3 {
+  font-size: 2.7rem;
+  margin-top: 1.5rem;
+}
+.Iso {
+  gap: 4rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.Iso img {
+  width: 30rem;
 }
 @media (max-width: 59em) {
   .vision,

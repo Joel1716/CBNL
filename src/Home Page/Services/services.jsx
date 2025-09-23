@@ -63,6 +63,7 @@ export default function Services() {
           <h3>Explore Our Best Services</h3>
           <p>Click the box to see our services</p>
         </div>
+
         <div className="services-offered grid-two-cols">
           {services.map((service, value) => (
             <Link to="/services" key={value}>
