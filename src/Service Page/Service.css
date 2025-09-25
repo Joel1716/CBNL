@@ -99,10 +99,10 @@
   padding-left: 4.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .info-container li {
-  line-height: 1.5;
+  line-height: 1.7;
 }
 .info-container li {
   list-style: circle;

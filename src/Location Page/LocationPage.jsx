@@ -14,7 +14,7 @@ export default function LocationPage() {
         "17 Regional Support Centres with warehousing across Nigeria",
       ],
       clients: ["MTN.svg", "INQ.png", "airtel.png", "9-mobile.png"],
-      image: "Nigerias.jpg",
+      image: "Nigeria-Area.webp",
     },
     {
       info: [
@@ -24,7 +24,7 @@ export default function LocationPage() {
         "Main warehouse in Accra, supported by 3 regional warehouses",
       ],
       clients: ["MTN.svg", "Vodafone.svg"],
-      image: "Ghana-Area.jpg",
+      image: "Ghana-Area.webp",
     },
     {
       info: [
@@ -40,7 +40,7 @@ export default function LocationPage() {
         "Liquid.png",
         "bayobab.svg",
       ],
-      image: "Kenya-Area.jpg",
+      image: "Kenya-Area.webp",
     },
     {
       info: [
@@ -50,7 +50,7 @@ export default function LocationPage() {
         "Main warehouse in Johannesburg, supported by 3 regional warehouses",
       ],
       clients: ["MTN.svg", "Liquid.png", "vodacom.png"],
-      image: "SA-Area.jpg",
+      image: "SA-Area.webp",
     },
   ];
   const otherCountryData = [
@@ -97,7 +97,7 @@ export default function LocationPage() {
       "Local teams trained and certified in major OEM technologies & QSHE compliant",
       "Warehousing & logistics facilities fully set up in Abidjan",
     ],
-    image: "Cameroon.jpg",
+    image: "Cameroon-Area.webp",
   };
   const heroInfo = {
     page: "location-hero",

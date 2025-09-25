@@ -30,31 +30,35 @@ export default function Solution() {
     {
       title: "Leading-Edge Solutions",
       summary:
-        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+        "Flexible Sub-6GHz radios supporting PTP & PMP for enterprise and operator networks.",
       link: "/Leading-Edge",
+    },
+    {
+      title: "E-Band and V-Band",
+      summary: "Multi-gigabit wireless backhaul for 5G and urban networks.",
+      link: "/Network-Band",
     },
     {
       title: "5G Solution",
       summary:
-        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+        "5G FWA delivering high-throughput, low-latency connectivity at scale.",
       link: "/5G_Solution",
     },
     {
       title: "Free Space Optics",
       summary:
-        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+        "License-free gigabit wireless links with fiber-like performance.",
       link: "/Space-Optics",
     },
     {
       title: "Fiber Monitoring Solution",
       summary:
-        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+        "In-service fiber monitoring for higher SLA and reduced downtime.",
       link: "/Fibre-Solution",
     },
     {
       title: "GPON Solutions",
-      summary:
-        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+      summary: "Complete GPON/XGS-PON solutions for FTTx networks.",
       download: "true",
     },
   ];

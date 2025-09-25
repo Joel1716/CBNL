@@ -18,11 +18,10 @@ export default function FibreSolution() {
         <div className="intro-text">
           <h2>Free Space Optics</h2>
           <p>
-            CBNL’s E-band solutions deliver multi-gigabit wireless connectivity
-            tailored for dense urban and suburban deployments. By leveraging
-            high-frequency spectrum, E-band provides operators with
-            cost-effective, scalable backhaul and access options to meet today’s
-            growing data demands.
+            FSO provides high-speed, license-free connectivity using light
+            instead of radio. With throughputs up to 10Gbps, FSO offers secure,
+            interference-free links without trenching or spectrum fees, perfect
+            for enterprise and last-mile backhaul.
           </p>
         </div>
         <TextLogo

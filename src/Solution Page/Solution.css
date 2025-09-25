@@ -81,7 +81,7 @@
   margin: 0 auto;
 }
 .wideband-approach {
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 .wideband-info {
   display: flex;
@@ -94,7 +94,7 @@
   line-height: 1.7;
 }
 .expandable {
-  margin-top: 5rem;
+  margin-top: 8rem;
   border-bottom: 1px solid black;
 }
 .expandable h2 {
@@ -147,8 +147,8 @@
 
 /* ISP Network */
 .Isp-hero {
-  background: url("/ISP-Networks.jpg");
-  background-position: center;
+  background: url("/ISP-Networks.webp");
+  background-position: 50% 40%;
   background-size: cover;
 }
 .isp-solutions-container p {

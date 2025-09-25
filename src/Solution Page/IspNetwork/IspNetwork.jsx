@@ -1,16 +1,42 @@
 import Hero from "../../Hero/Hero.jsx";
 import { WideBandApproach } from "../Mobile/mobile";
+import { Expandable } from "../../Training/Training.jsx";
+import { useState } from "react";
 export default function IspNetwork() {
+  const [clicked, setClicked] = useState(false);
   const heroInfo = {
     page: "Isp-hero",
     pageHeading: "ISP-Network",
   };
+  const datas = [
+    {
+      heading: "Fast time to market",
+      info: [
+        "Quick to deploy – one hub radio serves many remote terminals",
+        "Smartphone App speeds up alignment and commissioning.",
+      ],
+    },
+    {
+      heading: "Rapid return on investment",
+      info: [
+        "Reduced equipment costs create significant CAPEX savings over fibre and point-to-point",
+        "Independently proven to deliver total cost of ownership savings of up to 50% over competing technology.",
+      ],
+    },
+    {
+      heading: "High capacity and performance",
+      info: [
+        "600Mb/s per link and per sector, up to 14.4Gb/s per hub site.",
+        "Licensed spectrum provides guaranteed quality of service compared to non line of sight technologies.",
+      ],
+    },
+  ];
   return (
     <>
       <Hero page={heroInfo.page} pageHeading={heroInfo.pageHeading} />
       <main>
         <div className="intro-text solution-intro">
-          <h2>Reliable ISP Network</h2>
+          <h2>Broadband Access for ISPs</h2>
           <p>
             Despite fibre’s unlimited capacity, the high cost (both in laying
             new fibre and leasing) and slow deployment result in the solution
@@ -67,6 +93,25 @@ export default function IspNetwork() {
             wideband PMP solution available.
           </p>
         </WideBandApproach>
+        <div className="expandable">
+          <h2>The VectaStar solution</h2>
+          {datas.map((data, value) => {
+            return (
+              <Expandable
+                onCourseClick={setClicked}
+                courseClick={clicked}
+                heading={data.heading}
+                value={value}
+              >
+                <ul>
+                  {data.info.map((eachInfo) => (
+                    <li>{eachInfo}</li>
+                  ))}
+                </ul>
+              </Expandable>
+            );
+          })}
+        </div>
       </main>
     </>
   );

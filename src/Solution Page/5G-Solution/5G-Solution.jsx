@@ -16,13 +16,12 @@ export default function FifthGeneration() {
       <Hero page={heroInfo.page} pageHeading={heroInfo.pageHeading} />
       <main className="page-main">
         <div className="intro-text">
-          <h2>Ultra-High-Capacity E-Band Solutions</h2>
+          <h2>High-Performance 5G Fixed Wireless Access</h2>
           <p>
-            CBNL’s E-band solutions deliver multi-gigabit wireless connectivity
-            tailored for dense urban and suburban deployments. By leveraging
-            high-frequency spectrum, E-band provides operators with
-            cost-effective, scalable backhaul and access options to meet today’s
-            growing data demands.
+            Powered by CBNL’s VectaStar technology, our 5G FWA solutions deliver
+            gigabit-class connectivity over licensed spectrum. With flexible
+            TDD/FDD deployment and 3GPP compliance, VectaStar supports dense
+            urban and suburban broadband rollouts.
           </p>
         </div>
         <TextLogo

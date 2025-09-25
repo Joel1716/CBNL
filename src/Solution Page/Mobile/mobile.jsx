@@ -28,11 +28,33 @@ export default function MobileBackhaul() {
       ],
     },
     {
-      heading: "Rapid backhaul coverage",
+      heading: "Scale networks quickly and cost effectively",
       info: [
-        "Quick to deploy – almost half the radios compared to point-to-point",
-        "Easy to deploy and align – intelligent form factor and new smartphone App simplifies installation and alignment.",
-        "Guaranteed quality of service compared to non line of sight technologies.",
+        "Scale networks quickly and cost effectively Sector coverage enables new base stations to be connected quickly by a single installation team, without a visit to the access point or the need of additional spectrum.",
+      ],
+    },
+    {
+      heading: "New all-IP networks - 3G, HSPA+, LTE",
+      info: [
+        "Build carrier-grade all-IP networks quickly, cost effectively and with the performance to scale to meet future demands.",
+      ],
+    },
+    {
+      heading: "Greenfield or network upgrade",
+      info: [
+        "Build highly efficient greenfield backhaul networks, or utilise VectaStar’s interoperability with the most widely used PTP solutions to cost effectively upgrade and expand legacy networks.",
+      ],
+    },
+    {
+      heading: "2G - 3G IP backhaul migration",
+      info: [
+        "VectaStar supports TDM, all-IP, hybrid backhaul and all forms of network synchronisation to enable a simple and low risk backhaul migration.",
+      ],
+    },
+    {
+      heading: "Industry Proven",
+      info: [
+        "The market leading multipoint microwave product, deployed by over 70 leading operators across over 40 countries for 3G, LTE, Wi-Fi mobile backhaul.",
       ],
     },
   ];
