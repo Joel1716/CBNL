@@ -148,7 +148,7 @@
 }
 .deployment-inner-container .deployment-img-box {
   width: 100%;
-  height: 52rem;
+  height: auto;
 }
 .deployment-inner-container .deployment-img-box img {
   width: 100%;

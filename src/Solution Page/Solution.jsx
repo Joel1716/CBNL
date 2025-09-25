@@ -1,5 +1,6 @@
 import "./Solution.css";
 import Hero from "../Hero/Hero";
+import { Link } from "react-router-dom";
 export default function Solution() {
   const heroInfo = {
     page: "solution-hero",
@@ -9,49 +10,52 @@ export default function Solution() {
   };
   const solutions = [
     {
-      img: "building.webp",
-      heading: "Building-to-Building Connectivity",
-      subheading:
-        "Seamless wireless links across estates, campuses, and facilities",
-      info: "Enable communication across multiple buildings without the hassle of fiber trenching. Our point-to-point and point-to-multipoint wireless links connect schools, hospitals, corporate buildings, and residential blocks, allowing them to share internet access, central systems, and security infrastructure. It's a scalable, cost-efficient solution that supports rapid urban growth and unified network management.",
-      alt: "Building",
+      title: "Mobile Backhaul",
+      summary:
+        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+      link: "/Mobile-Backhaul",
     },
     {
-      img: "Rural.webp",
-      heading: "Rural Connectivity",
-      subheading: "Affordable broadband for remote and underserved regions",
-      info: "We deliver cost-effective, high-capacity wireless broadband to rural areas lacking traditional infrastructure. Our solutions enable local communities, schools, and small businesses to access essential internet services promoting digital inclusion, education, and economic growth. Designed for fast deployment and rugged environments, our networks ensure strong coverage, reliability, and scalability in even the most challenging terrains.",
-      alt: "Rural Area",
+      title: "Enterprise Access",
+      summary:
+        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+      link: "/Enterprise-Access",
     },
     {
-      img: "Smart-City.webp",
-      heading: "Smart City Connectivity",
-      subheading:
-        "Powering intelligent urban infrastructure with wireless broadband",
-      info: "As cities adopt smarter technologies, we support their backbone: connectivity. From traffic lights and environmental sensors to CCTV and public Wi-Fi, our wireless systems connect critical infrastructure in real-time. High throughput and low latency allow cities to operate more efficiently, keep residents safe, and gather valuable data for planning and management.",
-      alt: "Bunch of cars moving on the road connected with lines",
+      title: "ISP Network",
+      summary:
+        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+      link: "/Isp-Network",
     },
     {
-      img: "Enterprise.webp",
-      heading: "Enterprise Access",
-      subheading: "Dedicated high-speed internet for business operations",
-      info: "Enterprises depend on secure, uninterrupted connectivity. Our solutions offer private, high-speed wireless access tailored for businesses that need real-time data flow, cloud services, and remote collaboration. Whether you're in finance, logistics, education, or healthcare, our enterprise-grade networks ensure superior uptime, data security, and scalability — all without relying on fiber or digging.",
-      alt: "Top of a white Tower with rectangular antennas on them in an environment with lots of trees",
+      title: "Leading-Edge Solutions",
+      summary:
+        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+      link: "/Leading-Edge",
     },
     {
-      img: "fibre.webp",
-      heading: "Hybrid Fiber & Wireless Infrastructure",
-      subheading: "Combining fiber's speed with wireless flexibility",
-      info: "Our hybrid approach allows operators to extend service intoareas where fiber alone is too expensive or slow to deploy. Fiber delivers core connectivity, while wireless fills the gaps, maintaining quality and coverage. This model is especially effective for semi-urban expansion, backup connectivity, or dense areas requiring fast, reliable delivery.",
-      alt: "Blue Fibre",
+      title: "5G Solution",
+      summary:
+        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+      link: "/5G_Solution",
     },
     {
-      img: "mobile.webp",
-      heading: "Mobile Backhaul",
-      subheading:
-        "Robust wireless infrastructure to support mobile network expansion",
-      info: "CBNL's wireless backhaul solutions connect mobile base stations to the core network, enabling operators to extend coverage and boost network capacity in urban and rural areas. Designed to handle high traffic loads and future growth, our solutions ensure mobile users enjoy seamless voice, data, and video services,even during peak usage periods. They are ideal for 4G LTE and 5G deployments, supporting rapid rollout and reduced infrastructure costs.",
-      alt: "Tower with circular dishes and rectangular antennas on them",
+      title: "Free Space Optics",
+      summary:
+        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+      link: "/Space-Optics",
+    },
+    {
+      title: "Fiber Monitoring Solution",
+      summary:
+        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+      link: "/Fibre-Solution",
+    },
+    {
+      title: "GPON Solutions",
+      summary:
+        "Secure, scalable connectivity for businesses, campuses, and enterprises requiring dedicated high-speed links.",
+      download: "true",
     },
   ];
   return (
@@ -80,24 +84,24 @@ export default function Solution() {
             forward.
           </p>
         </div>
-        <div className="solutions-container">
-          <h2>Our Solutions</h2>
-          <div className="all-solutions">
-            {solutions.map((solution, value) => {
-              return (
-                <div key={value} className="row grid-two-cols">
-                  <div className="solution-info">
-                    <h3>{solution.heading}</h3>
-                    <h4>{solution.subheading}</h4>
-                    <p>{solution.info}</p>
-                  </div>
-                  <div className="image-box">
-                    <img src={solution.img} alt={solution.alt} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="all-solutions">
+          {solutions.map((solution) => {
+            return (
+              <div>
+                <h3 className="solution-title">{solution.title}</h3>
+                <p className="solution-summary">{solution.summary}</p>
+                <button>
+                  {solution.download === "true" ? (
+                    <a href="/GPON-Info.pdf" target="_blank">
+                      Learn More
+                    </a>
+                  ) : (
+                    <Link to={solution.link}>Learn More</Link>
+                  )}
+                </button>
+              </div>
+            );
+          })}
         </div>
       </main>
     </>

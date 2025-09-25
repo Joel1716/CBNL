@@ -114,7 +114,7 @@ export default function LocationPage() {
       />
       <main>
         <section className="location-main ">
-          <div className="intro-text location">
+          <div className="intro-text">
             <h2>Our Presence Across Africa</h2>
             <p>
               At CBNL Africa, our reach extends across multiple African markets,
@@ -190,7 +190,7 @@ function TabsContainer({ tabs, currentTab, onCurrentTab }) {
             onClick={() => onCurrentTab(value)}
             className={currentTab === value ? "active-tab" : ""}
           >
-            {tab}
+            <p>{tab}</p>
           </div>
         );
       })}
@@ -230,21 +230,24 @@ function MainCountries({ tabs, mainCountryData, currentTab }) {
   );
 }
 
-function TwoColumnLayout({ img, alt, color, children }) {
-  const image = {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-  };
+export function TwoColumnLayout({
+  img,
+  alt,
+  color,
+  reverse = false,
+  boxShadow,
+  children,
+}) {
   const containerStyles = {
+    boxShadow: boxShadow,
     backgroundColor: color,
   };
   return (
     <div style={containerStyles}>
-      <div className="column-container">
+      <div className={`column-container ${reverse ? "reverse" : ""}`}>
         {children}
-        <div className="country-img">
-          <img style={image} src={img} alt={alt} />
+        <div className="column-image">
+          <img src={img} alt={alt} />
         </div>
       </div>
     </div>

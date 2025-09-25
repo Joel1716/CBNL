@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export default function Solutions() {
   const solutions = [
     {
-      img: "Rural.webp",
-      heading: "Rural Connectivity",
+      img: "ISP-Networks.jpg",
+      heading: "ISP-Network",
       message:
-        "Affordable broadband solutions that deliver strong, stable internet to remote and underserved areas.",
+        " This is especially the case for growing urban and remote locations where the initial customer concentration is often too low to make the business case for fibre.",
       alt: "Rural Area",
     },
     {

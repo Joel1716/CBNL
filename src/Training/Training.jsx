@@ -99,7 +99,7 @@ export default function Training() {
           <h2>Our Courses</h2>
           {allCourses.map((eachCourse, value) => {
             return (
-              <Courses
+              <Expandable
                 heading={eachCourse.heading}
                 infoHeading={eachCourse.infoHeading}
                 onCourseClick={setCourseClick}
@@ -133,7 +133,7 @@ export default function Training() {
                     the VNMS.
                   </p>
                 )}
-              </Courses>
+              </Expandable>
             );
           })}
         </div>
@@ -142,7 +142,7 @@ export default function Training() {
   );
 }
 
-function Courses({
+export function Expandable({
   heading,
   infoHeading,
   onCourseClick,
@@ -160,7 +160,7 @@ function Courses({
         <p>{heading}</p>
       </div>
       <div className="course-info">
-        <p className="info-heading">{infoHeading}</p>
+        {infoHeading && <p className="info-heading">{infoHeading}</p>}
         {children}
       </div>
     </div>

@@ -16,6 +16,15 @@ import ReachUs from "./Contact/ReachUs/ReachUs.jsx";
 import Training from "./Training/Training.jsx";
 import Support from "./Support/Support.jsx";
 import LocationPage from "./Location Page/LocationPage.jsx";
+// Solution Pages
+import MobileBackhaul from "./Solution Page/Mobile/mobile.jsx";
+import EnterpriseAccess from "./Solution Page/Enterprise/EnterpriceAccess.jsx";
+import IspNetwork from "./Solution Page/IspNetwork/IspNetwork.jsx";
+import LeadingEdge from "./Solution Page/LeadingEdge/LeadingEdge.jsx";
+import NetworkBand from "./Solution Page/NetworkBand/NetworkBand.jsx";
+import FifthGeneration from "./Solution Page/5G-Solution/5G-Solution.jsx";
+import SpaceOptics from "./Solution Page/Space-Optics/SpaceOptics.jsx";
+import FibreSolution from "./Solution Page/Fibre-Solution/FibreSolution.jsx";
 // Reusables
 import StickyHeader from "./Header.jsx";
 import Footer from "./Footer/Footer.jsx";
@@ -48,6 +57,16 @@ export default function App() {
           <Route path="/Training" element={<Training />} />
           <Route path="/Location" element={<LocationPage />} />
           <Route path="/Policy" element={<Policy />} />
+          {/*  */}
+          <Route path="/Mobile-Backhaul" element={<MobileBackhaul />} />
+          <Route path="/Enterprise-Access" element={<EnterpriseAccess />} />
+          <Route path="/Isp-Network" element={<IspNetwork />} />
+          <Route path="/Leading-Edge" element={<LeadingEdge />} />
+          <Route path="/Network-Band" element={<NetworkBand />} />
+          <Route path="/5G_Solution" element={<FifthGeneration />} />
+          <Route path="/Space-Optics" element={<SpaceOptics />} />
+          <Route path="/Fibre-Solution" element={<FibreSolution />} />
+          {/*  */}
           <Route path="/Isp" element={<Isp />} />
           <Route path="/Oem" element={<Oem />} />
           <Route path="/Reach-Us" element={<ReachUs />} />

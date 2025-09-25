@@ -68,14 +68,14 @@ button:hover {
   max-width: 130rem;
   margin: 0 auto;
 }
-.page-main h2 {
+main h2 {
   color: var(--main-blue-color);
   font-size: 3rem;
+  line-height: 1.4;
 }
 .intro-text h2 {
   margin-bottom: 1rem;
   color: var(--main-blue-color);
-  font-size: 3rem;
 }
 .intro-text p {
   color: black;
