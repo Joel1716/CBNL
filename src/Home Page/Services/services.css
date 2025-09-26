@@ -31,7 +31,7 @@
   line-height: 1.3;
 }
 .services-info p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .services-offered {
   row-gap: 5rem;
@@ -58,7 +58,7 @@
   color: var(--header-black);
 }
 .service p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   line-height: 1.5;
 }
 .service-icon {

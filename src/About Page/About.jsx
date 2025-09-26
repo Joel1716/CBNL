@@ -1,7 +1,6 @@
 import "./About.css";
 import Hero from "../Hero/Hero";
 import { Link } from "react-router-dom";
-import { li } from "motion/react-client";
 export default function About() {
   const heroInfo = {
     page: "about-hero",
@@ -27,7 +26,7 @@ export default function About() {
   ];
   const managementInfo = [
     "Executive MANAGEMENT TEAM IS FULLY COMMITTED TO QUALITY, OCCUPATIONAL HEALTH, SAFETY AND THE ENVIRONMENT",
-    "ISO POLICY STATEMENT IS WELL ARTICULATED AND COMMUNICATED TO EMPLOYEES AND PARTNERS",
+    "Iso Policy Statement IS WELL ARTICULATED AND COMMUNICATED TO EMPLOYEES AND Partners",
     "PROCESSES ARE DOCUMENTED AND REVIEWED PERIODICALLY IN LINE WITH BEST PRACTICE STANDARDS",
     "COMPLIANCE IS MANDATORY BY ALL IN THE OFFICE AND ON THE FIELD AND IS MONITORED BY THE QSHE TEAM",
   ];
@@ -109,36 +108,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="certified-container">
-          <h2>Our Commitment to Quality, Safety & Standards</h2>
-          <p>
-            CBNL Africa operates under a comprehensive QSHE Management System
-            designed to guarantee quality delivery, protect health and safety,
-            and safeguard the environment. Our approach ensures risk management
-            and continuous improvement across all projects.
-          </p>
-          <ul>
-            {managementInfo.map((info) => (
-              <li className="flex-center">
-                <span className="checkmark">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
-                  </svg>
-                </span>
-                <p>{info}</p>
-              </li>
-            ))}
-          </ul>
-          <h3>We Are ISO Certified</h3>
-          <div className="Iso flex-center">
-            <img src="ISO-1.jpg" alt="" />
-            <img src="ISO-2.png" alt="" />
-          </div>
-        </div>
+        <CerfitiedContainer managementInfo={managementInfo} />
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">
           {pageDirection.map((direction) => (
@@ -155,5 +125,40 @@ export default function About() {
         </div>
       </main>
     </>
+  );
+}
+
+function CerfitiedContainer({ managementInfo }) {
+  return (
+    <div className="certified-container">
+      <h2>Our Commitment to Quality, Safety & Standards</h2>
+      <p>
+        CBNL Africa operates under a comprehensive QSHE Management System
+        designed to guarantee quality delivery, protect health and safety, and
+        safeguard the environment. Our approach ensures risk management and
+        continuous improvement across all projects.
+      </p>
+      <ul>
+        {managementInfo.map((info) => (
+          <li className="flex-center">
+            <span className="checkmark">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path>
+              </svg>
+            </span>
+            <p>{info}</p>
+          </li>
+        ))}
+      </ul>
+      <h3>We Are ISO Certified</h3>
+      <div className="Iso flex-center">
+        <img src="ISO-1.jpg" alt="" />
+        <img src="ISO-2.png" alt="" />
+      </div>
+    </div>
   );
 }

@@ -147,6 +147,9 @@
   header.nav-shown .solution-link {
     margin-bottom: 7.3rem;
   }
+  .contact-link .extra-links li {
+    padding: 0;
+  }
   header ul li a::before,
   header ul li::before {
     display: none;

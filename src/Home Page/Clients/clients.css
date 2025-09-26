@@ -14,29 +14,9 @@
   margin-bottom: 0.3rem;
 }
 .clients-heading p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 1.5;
 }
-/* .slideshow-container {
-  width: 85%;
-  max-width: 120rem;
-  margin: 0 auto;
-}
-.slideshow-container svg {
-  width: 6rem;
-  color: var(--main-blue-color);
-}
-.slideshow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  width: 100%;
-}
-.slideshow img {
-  width: 17rem;
-  justify-self: center;
-} */
-/*  */
 .slideshows {
   width: 98%;
   margin: 0 auto;

@@ -75,6 +75,7 @@ export default function EnterpriseAccess() {
         <TwoColumnLayout
           img="Enterprise-Diagram.jpg"
           height="auto"
+          boxShadow="0 2px 6px rgba(0, 0, 0, 0.1)"
           color="#f8f9fa"
         >
           <div className="solution-info">

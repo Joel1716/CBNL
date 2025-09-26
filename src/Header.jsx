@@ -121,7 +121,7 @@ export default function StickyHeader({ navClick, onNavClick }) {
                 });
               }}
             >
-              Contact Us
+              <p>Contact Us</p>
               {navClick === "contact" && <ExtraLinks pageInfo={pageInfo} />}
             </button>
           </div>

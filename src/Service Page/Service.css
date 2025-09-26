@@ -45,11 +45,11 @@
   cursor: pointer;
 }
 .long-message {
-  font-size: 1.7rem;
-  line-height: 1.8;
+  font-size: 1.8rem;
+  line-height: 1.9;
 }
 .main-info {
-  font-size: 2rem;
+  font-size: 2.1rem;
   list-style: decimal;
   margin: 0 0 0.5rem 2rem;
   line-height: 1.6;
@@ -57,7 +57,7 @@
 }
 .extra-info {
   color: var(--small-text-black);
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   list-style: inside;
   margin-left: 3rem;
 }
@@ -102,11 +102,9 @@
   gap: 1.5rem;
 }
 .info-container li {
-  line-height: 1.7;
-}
-.info-container li {
   list-style: circle;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+  line-height: 1.9;
 }
 .icon svg {
   width: 2.5rem;
@@ -121,7 +119,7 @@
 }
 .network-deploy-container p {
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 1.9;
 }
 .deployment-outer-container {

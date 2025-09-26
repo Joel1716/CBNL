@@ -90,8 +90,8 @@
   margin-top: 1.5rem;
 }
 .wideband-info p {
-  font-size: 1.8rem;
-  line-height: 1.7;
+  font-size: 1.9rem;
+  line-height: 1.9;
 }
 .expandable {
   margin-top: 8rem;
@@ -152,7 +152,7 @@
   background-size: cover;
 }
 .isp-solutions-container p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-top: 1rem;
 }
 .isp-solutions {
@@ -220,14 +220,14 @@
   margin-top: 5rem;
 }
 .intro-info-img div ul {
-  margin: 0 0 0 3rem;
+  margin: 1rem 0 0 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 .intro-info-img div li {
   list-style: decimal;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 1.6;
 }
 .intro-info-img div button {
