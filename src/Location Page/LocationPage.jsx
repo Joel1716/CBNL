@@ -13,7 +13,13 @@ export default function LocationPage() {
         "Knowledge and understanding of solutions from all major vendors",
         "17 Regional Support Centres with warehousing across Nigeria",
       ],
-      clients: ["MTN.svg", "INQ.png", "airtel.png", "9-mobile.png"],
+      clients: [
+        "MTN.svg",
+        "INQ.png",
+        "airtel.png",
+        "9-mobile.png",
+        "IHS-logo.png",
+      ],
       image: "Nigeria-Area.webp",
     },
     {
