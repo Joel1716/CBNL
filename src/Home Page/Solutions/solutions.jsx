@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export default function Solutions() {
   const solutions = [
     {
-      img: "ISP-Networks.jpg",
+      img: "ISP-Networks.webp",
       heading: "ISP-Network",
       message:
-        " This is especially the case for growing urban and remote locations where the initial customer concentration is often too low to make the business case for fibre.",
-      alt: "Rural Area",
+        "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
+      alt: "Building Connected with Blue Network Lines",
     },
     {
       img: "Enterprise.webp",
@@ -17,11 +17,11 @@ export default function Solutions() {
       alt: "Top of a white Tower with rectangular antennas on them in an environment with lots of trees",
     },
     {
-      img: "mobile.webp",
+      img: "mobile.jpg",
       heading: "Mobile Backhaul",
       message:
         "Reliable wireless links that connect mobile towers to the core network, expanding coverage and boosting capacity.",
-      alt: "Tower with circular dishes and rectangular antennas on them",
+      alt: "Tower with Wrectangular antennas on them",
     },
   ];
   return (

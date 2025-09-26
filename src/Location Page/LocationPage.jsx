@@ -259,7 +259,7 @@ function Clients({ clients, width, minWidth }) {
     display: "grid",
     gridTemplateColumns: `repeat(auto-fit, minmax(${minWidth}, 1fr))`,
     alignItems: "center",
-    rowGap: "3rem",
+    rowGap: "5rem",
   };
   const style = {
     width,

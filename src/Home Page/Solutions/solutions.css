@@ -72,6 +72,8 @@ footer button {
 }
 footer button {
   color: white;
+}
+footer button a {
   padding: 1rem 1.5rem;
 }
 

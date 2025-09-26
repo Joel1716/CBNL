@@ -37,8 +37,10 @@
 .target-button {
   font-size: 1.7rem;
   color: white;
-  padding: 1rem 1.5rem;
   margin-top: 1rem;
+}
+.target-button a {
+  padding: 1rem 1.5rem;
 }
 .icon {
   font-size: 1.6rem;

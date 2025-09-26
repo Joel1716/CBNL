@@ -53,10 +53,14 @@ p {
 button {
   background-color: var(--main-blue-color);
   border: none;
-  padding: 1.3rem 1.8rem;
   font-size: 1.6rem;
   border-radius: var(--border-radius);
   cursor: pointer;
+}
+button a {
+  width: 100%;
+  height: 100%;
+  padding: 1.3rem 1.8rem;
 }
 button:hover {
   background-color: var(--button-hover);
