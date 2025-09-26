@@ -1,7 +1,7 @@
 .location-hero {
   background: url("/Earth.webp");
   background-size: cover;
-  background-position: center left;
+  background-position: center;
   height: 80vh;
   margin-bottom: 5rem;
 }
@@ -67,7 +67,7 @@
     grid-row: 2/3;
   }
   .column-container .column-image {
-    height: 45rem;
+    height: 50rem;
   }
 }
 @media (max-width: 37.7em) {

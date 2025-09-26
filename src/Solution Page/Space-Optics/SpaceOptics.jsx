@@ -2,7 +2,7 @@ import Hero from "../../Hero/Hero";
 import { TextLogo } from "../NetworkBand/NetworkBand";
 export default function SpaceOptics() {
   const heroInfo = {
-    page: "enterprise-hero",
+    page: "solution-hero",
     pageHeading: "Free Space Optics",
   };
   const Info = [

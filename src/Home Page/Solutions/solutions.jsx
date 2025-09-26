@@ -17,7 +17,7 @@ export default function Solutions() {
       alt: "Top of a white Tower with rectangular antennas on them in an environment with lots of trees",
     },
     {
-      img: "mobile.jpg",
+      img: "mobile.webp",
       heading: "Mobile Backhaul",
       message:
         "Reliable wireless links that connect mobile towers to the core network, expanding coverage and boosting capacity.",

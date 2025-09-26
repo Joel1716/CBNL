@@ -1,7 +1,12 @@
 .solution-hero,
 .mobile-hero,
 .enterprise-hero,
-.Isp-hero {
+.Isp-hero,
+.band-hero,
+.leading-edge-hero,
+.fiber-solution-hero,
+.fso-hero,
+.five-gen-hero {
   background: url("/solution.webp");
   background-size: cover;
   background-position: center left;
@@ -42,7 +47,7 @@
 
 /* Mobile Page */
 .mobile-hero {
-  background: url("/mobile.jpg");
+  background: url("/mobile.webp");
   background-position: 50% 45%;
 }
 .solution-intro {
@@ -165,6 +170,11 @@
   width: 90%;
 }
 /* Leading Edge */
+.leading-edge-hero {
+  background: url("/Leading-Edge.webp");
+  background-position: center;
+  background-size: cover;
+}
 .mimosa-container {
   display: flex;
   flex-direction: column;
@@ -201,6 +211,11 @@
   margin-top: 2rem;
 }
 /* E-Band */
+.band-hero {
+  background: url("/E-band.webp");
+  background-position: 50% 70%;
+  background-size: cover;
+}
 .intro-info-img {
   display: flex;
   gap: 1rem;
@@ -243,4 +258,22 @@
   .intro-info-img img {
     width: 80%;
   }
+}
+/* Fiber Solution */
+.fiber-solution-hero {
+  background: url("/Monitoring.webp");
+  background-position: center 80%;
+  background-size: cover;
+}
+/* FSO */
+.fso-hero {
+  background: url("/Optics.webp");
+  background-position: center 60%;
+  background-size: cover;
+}
+/* 5G */
+.five-gen-hero {
+  background: url("/Fifth-Gen.webp");
+  background-position: center 60%;
+  background-size: cover;
 }

@@ -2,7 +2,7 @@ import Hero from "../../Hero/Hero";
 import { TextLogo } from "../NetworkBand/NetworkBand";
 export default function FibreSolution() {
   const heroInfo = {
-    page: "enterprise-hero",
+    page: "fiber-solution-hero",
     pageHeading: "FIber Monitoring Solution",
   };
   const Info = [

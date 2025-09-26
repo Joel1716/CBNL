@@ -2,7 +2,7 @@ import Hero from "../../Hero/Hero";
 import { TextLogo } from "../NetworkBand/NetworkBand";
 export default function FifthGeneration() {
   const heroInfo = {
-    page: "enterprise-hero",
+    page: "five-gen-hero",
     pageHeading: "5G Solutions",
   };
   const Info = [

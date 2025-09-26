@@ -1,7 +1,7 @@
 import Hero from "../../Hero/Hero";
 export default function LeadingEdge() {
   const heroInfo = {
-    page: "enterprise-hero",
+    page: "leading-edge-hero",
     pageHeading: "Sub 6GHZ Unlicensed Leading-Edge Solutions",
   };
   const mimosaInfo = [

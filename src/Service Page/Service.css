@@ -171,7 +171,4 @@
   .deployment-inner-container:nth-child(even) .deployment-img-box {
     grid-row: 1/2;
   }
-  .deployment-inner-container:first-child img {
-    object-position: bottom;
-  }
 }

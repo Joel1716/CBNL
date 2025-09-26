@@ -2,7 +2,7 @@ import Hero from "../../Hero/Hero";
 import { Link } from "react-router-dom";
 export default function NetworkBand() {
   const heroInfo = {
-    page: "enterprise-hero",
+    page: "band-hero",
     pageHeading: " E-band & V-Band Access & Backhaul Solutions",
   };
   const Info = [

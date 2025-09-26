@@ -41,6 +41,7 @@ export default function Service() {
           name: "Spares Management",
         },
       ],
+      img: "Maintenance.webp",
     },
     {
       title: "FTTX CAPABILITIES",
@@ -73,6 +74,7 @@ export default function Service() {
           ],
         },
       ],
+      img: "FTTX.webp",
     },
     {
       title: "Smart Logistics Management",
@@ -106,6 +108,7 @@ export default function Service() {
           ],
         },
       ],
+      img: "Logistics.webp",
     },
     {
       title: "Network RF Services",
@@ -132,6 +135,7 @@ export default function Service() {
         "Frequency Planning(Current & Future)",
         "Capacity Planning & Design",
       ],
+      img: "RF.webp",
     },
   ];
   const heroInfo = {
@@ -233,7 +237,7 @@ export default function Service() {
                           </p>
                         ) : (
                           <DeplomentServices
-                            img="RF.webp"
+                            img={services[selected].img}
                             imgBox="each-service-img"
                           >
                             <ul>
@@ -342,7 +346,7 @@ function NetworkDeployment() {
         design, build and transfer, as a turnkey service.
       </p>
       <div className="deployment-outer-container">
-        <DeplomentServices img="RF.webp" alt="A Tower" color="#f8f9fa">
+        <DeplomentServices img="Microwave.webp" alt="A Tower" color="#f8f9fa">
           <h3 className="text-center">Microwave Implementation & Support</h3>
           <ul>
             <li className="main-info">
@@ -363,7 +367,7 @@ function NetworkDeployment() {
           </ul>
         </DeplomentServices>
         <DeplomentServices
-          img="Fibres.webp"
+          img="fibre.webp"
           alt="FIbres connected in an ODF"
           color="#f8f9fa"
         >
