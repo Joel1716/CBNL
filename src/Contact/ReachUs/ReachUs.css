@@ -21,7 +21,8 @@
 }
 .contact-info-container {
   background-color: white;
-  width: 60rem;
+  width: 97%;
+  max-width: 60rem;
   margin: 4rem 0 0;
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -41,7 +42,8 @@
   font-size: 2.5rem;
 }
 .contact-info p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  line-height: 1.4;
 }
 .contact-info {
   gap: 0.7rem;
@@ -53,5 +55,5 @@
 }
 .contact-info-container + h2 {
   font-size: 2rem;
-  color: green;
+  color: var(--main-blue-color);
 }
