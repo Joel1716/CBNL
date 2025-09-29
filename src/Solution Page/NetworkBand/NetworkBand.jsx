@@ -43,8 +43,8 @@ export function TextLogo({ information, heading, link, img }) {
       <div className="intro-info-img">
         <div>
           <ul>
-            {information.map((info) => {
-              return <li>{info}</li>;
+            {information.map((info, value) => {
+              return <li key={value}>{info}</li>;
             })}
           </ul>
           <button>
@@ -53,7 +53,7 @@ export function TextLogo({ information, heading, link, img }) {
             </a>
           </button>
         </div>
-        <img src={img} alt="" />
+        <img src={img} alt={`${img.split(".")[0]} Logo`} loading="lazy" />
       </div>
     </div>
   );

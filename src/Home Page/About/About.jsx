@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 export default function About() {
   const attributes = [
     {
@@ -87,7 +88,7 @@ export default function About() {
             ))}
           </ul>
           <button>
-            <a href="#">Learn more about us</a>
+            <Link to="/about">Learn more about us</Link>
           </button>
         </div>
       </div>

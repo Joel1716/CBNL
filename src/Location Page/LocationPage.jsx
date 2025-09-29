@@ -13,13 +13,7 @@ export default function LocationPage() {
         "Knowledge and understanding of solutions from all major vendors",
         "17 Regional Support Centres with warehousing across Nigeria",
       ],
-      clients: [
-        "MTN.svg",
-        "INQ.png",
-        "airtel.png",
-        "9-mobile.png",
-        "IHS-logo.png",
-      ],
+      clients: ["MTN.svg", "INQ.png", "airtel.png", "9-mobile.png", "IHS.png"],
       image: "Nigeria-Area.webp",
     },
     {
@@ -145,9 +139,9 @@ export default function LocationPage() {
           />
           <h2>Also Present in</h2>
           <div className="other-countries-container">
-            {otherCountryData.map((data) => {
+            {otherCountryData.map((data, value) => {
               return (
-                <div className="other-country">
+                <div key={value} className="other-country">
                   <h4>{data.name}</h4>
                   <Clients
                     clients={data.clients}
@@ -160,28 +154,7 @@ export default function LocationPage() {
           </div>
         </section>
         <h2>Expanding Our Footprint</h2>
-        <section className="expansion-country-container">
-          <div className="expansion-country">
-            <TwoColumnLayout img={cameroonData.image}>
-              <div className="country-info">
-                <h3>Cameroon</h3>
-                <p>
-                  We’re growing our footprint in Africa. Cameroon is now open
-                  for business, and if you need us in our regions, our teams are
-                  ready to support you.
-                </p>
-                <ul>
-                  {cameroonData.info.map((data) => {
-                    return <li>{data}</li>;
-                  })}
-                </ul>
-                {/* <button>
-                  <Link>Contact Us</Link>
-                </button> */}
-              </div>
-            </TwoColumnLayout>
-          </div>
-        </section>
+        <ExpansionCountries cameroonData={cameroonData} />
       </main>
     </>
   );
@@ -193,6 +166,7 @@ function TabsContainer({ tabs, currentTab, onCurrentTab }) {
       {tabs.map((tab, value) => {
         return (
           <div
+            key={value}
             onClick={() => onCurrentTab(value)}
             className={currentTab === value ? "active-tab" : ""}
           >
@@ -209,7 +183,7 @@ function MainCountries({ tabs, mainCountryData, currentTab }) {
     <div className="main-countries-container">
       <TwoColumnLayout
         img={mainCountryData[currentTab].image}
-        alt="Nigeria Map"
+        alt={mainCountryData[currentTab].image.split(".")[0]}
         color="#f8f9fa"
       >
         <div className="country-info">
@@ -218,10 +192,9 @@ function MainCountries({ tabs, mainCountryData, currentTab }) {
             We are uniquely positioned to deliver major projects across{" "}
             {tabs[currentTab]}:
           </p>
-          {console.log(mainCountryData[currentTab])}
           <ul>
-            {mainCountryData[currentTab].info.map((data) => {
-              return <li>{data}</li>;
+            {mainCountryData[currentTab].info.map((data, value) => {
+              return <li key={value}>{data}</li>;
             })}
           </ul>
           <h4>MNO's and InfraCos we work with</h4>
@@ -233,6 +206,35 @@ function MainCountries({ tabs, mainCountryData, currentTab }) {
         </div>
       </TwoColumnLayout>
     </div>
+  );
+}
+function ExpansionCountries({ cameroonData }) {
+  return (
+    <section className="expansion-country-container">
+      <div className="expansion-country">
+        <TwoColumnLayout
+          img={cameroonData.image}
+          alt={cameroonData.image.split(".")[0]}
+        >
+          <div className="country-info">
+            <h3>Cameroon</h3>
+            <p>
+              We’re growing our footprint in Africa. Cameroon is now open for
+              business, and if you need us in our regions, our teams are ready
+              to support you.
+            </p>
+            <ul>
+              {cameroonData.info.map((data, value) => {
+                return <li key={value}>{data}</li>;
+              })}
+            </ul>
+            <button>
+              <Link to="/Isp">Contact Us</Link>
+            </button>
+          </div>
+        </TwoColumnLayout>
+      </div>
+    </section>
   );
 }
 
@@ -253,7 +255,7 @@ export function TwoColumnLayout({
       <div className={`column-container ${reverse ? "reverse" : ""}`}>
         {children}
         <div className="column-image">
-          <img src={img} alt={alt} />
+          <img src={img} alt={alt} loading="lazy" />
         </div>
       </div>
     </div>
@@ -272,9 +274,14 @@ function Clients({ clients, width, minWidth }) {
   };
   return (
     <div style={container}>
-      {clients.map((client) => (
-        <div>
-          <img style={style} src={client} alt="" />
+      {clients.map((client, value) => (
+        <div key={value}>
+          <img
+            style={style}
+            src={client}
+            alt={`${client.split(".")[0]} Logo`}
+            loading="lazy"
+          />
         </div>
       ))}
     </div>

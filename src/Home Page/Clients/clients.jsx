@@ -123,7 +123,7 @@ export default function Clients() {
           >
             {clients.map((client, value) => (
               <div key={value}>
-                <img src={client.img} alt={client.alt} />
+                <img src={client.img} alt={client.alt} loading="lazy" />
               </div>
             ))}
           </Slide>

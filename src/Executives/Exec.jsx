@@ -59,6 +59,7 @@ export default function Exec() {
                   className="exec-img"
                   src={exec.img}
                   alt={`${exec.name}(${exec.role})`}
+                  loading="lazy"
                 />
                 <p className="exec-name">{exec.name}</p>
                 <p className="exec-role">{exec.role}</p>

@@ -63,8 +63,8 @@ export default function IspNetwork() {
           <p>Figure 1: High capacity corporate ISP network</p>
           <p>Figure 2: Residential ISP network middle mile</p>
           <div className="isp-solutions">
-            <img src="ISP-diagram1.jpg" alt="" />
-            <img src="ISP-diagram2.jpg" alt="" />
+            <img src="ISP-diagram1.jpg" alt="ISP-diagram 1" loading="lazy" />
+            <img src="ISP-diagram2.jpg" alt="ISP-diagram 2" loading="lazy" />
           </div>
         </div>
         <WideBandApproach>
@@ -102,10 +102,11 @@ export default function IspNetwork() {
                 courseClick={clicked}
                 heading={data.heading}
                 value={value}
+                key={value}
               >
                 <ul>
-                  {data.info.map((eachInfo) => (
-                    <li>{eachInfo}</li>
+                  {data.info.map((eachInfo, value) => (
+                    <li key={value}>{eachInfo}</li>
                   ))}
                 </ul>
               </Expandable>

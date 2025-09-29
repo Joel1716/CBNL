@@ -43,17 +43,19 @@ export default function LeadingEdge() {
           </p>
         </div>
         <div className="mimosa-container">
-          <img src="Mimosa.png" alt="" />
+          <img src="Mimosa.png" alt="Mimosa Logo" loading="lazy" />
           <ul>
-            {mimosaInfo.map((info) => {
+            {mimosaInfo.map((info, value) => {
               return (
-                <>
+                <div key={value}>
                   <li>{info.mainInfo}</li>
                   <div className="secondary-info">
                     {info.secondaryInfo &&
-                      info.secondaryInfo.map((info) => <li>{info}</li>)}
+                      info.secondaryInfo.map((info, value) => (
+                        <li key={value}>{info}</li>
+                      ))}
                   </div>
-                </>
+                </div>
               );
             })}
           </ul>

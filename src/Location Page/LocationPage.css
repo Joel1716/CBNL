@@ -116,6 +116,9 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.country-info button {
+  margin-top: 2rem;
+}
 .other-countries-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));

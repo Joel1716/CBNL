@@ -27,7 +27,7 @@ export default function Cta() {
     {
       heading: "Explore Careers",
       buttonText: "View job openings → ",
-      to: "/",
+      to: "/careers",
     },
   ];
   return (

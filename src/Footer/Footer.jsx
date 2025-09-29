@@ -47,6 +47,7 @@ export default function Footer() {
             className="company-logo"
             src="CBNL Logo.png"
             alt="Company Logo"
+            loading="lazy"
           />
           <p>
             CBNL delivers high-performance broadband infrastructure and

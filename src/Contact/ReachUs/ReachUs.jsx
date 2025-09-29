@@ -110,7 +110,11 @@ export default function ReachUs() {
             value={selectedCountry}
           >
             {contactInfo.map((contact, num) => {
-              return <option value={num}>{contact.name}</option>;
+              return (
+                <option key={num} value={num}>
+                  {contact.name}
+                </option>
+              );
             })}
           </select>
         </div>

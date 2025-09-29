@@ -111,8 +111,8 @@ export default function About() {
         <CerfitiedContainer managementInfo={managementInfo} />
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">
-          {pageDirection.map((direction) => (
-            <div className="each-page">
+          {pageDirection.map((direction, value) => (
+            <div key={value} className="each-page">
               <img src={direction.img} alt={direction.alt} loading="lazy" />
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
@@ -139,8 +139,8 @@ function CerfitiedContainer({ managementInfo }) {
         continuous improvement across all projects.
       </p>
       <ul>
-        {managementInfo.map((info) => (
-          <li className="flex-center">
+        {managementInfo.map((info, value) => (
+          <li key={value} className="flex-center">
             <span className="checkmark">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

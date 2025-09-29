@@ -67,7 +67,6 @@ export default function Services() {
         <div className="services-offered grid-two-cols">
           {services.map((service, value) => (
             <Link to="/services" key={value}>
-              {" "}
               <div className="service">
                 <div className="service-icon">{service.icon}</div>
                 <h3>{service.heading}</h3>

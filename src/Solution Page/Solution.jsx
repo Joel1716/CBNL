@@ -89,9 +89,9 @@ export default function Solution() {
           </p>
         </div>
         <div className="all-solutions">
-          {solutions.map((solution) => {
+          {solutions.map((solution, value) => {
             return (
-              <div>
+              <div key={value}>
                 <h3 className="solution-title">{solution.title}</h3>
                 <p className="solution-summary">{solution.summary}</p>
                 <button>

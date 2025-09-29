@@ -150,12 +150,14 @@ export default function Service() {
       name: "Training",
       heading: "how we train professionals",
       link: "/Training",
+      alt: "A constructor woman standing, holding and looking at an open laptop",
     },
     {
       img: "Tech.webp",
       name: "Technologies",
       heading: "Technologies used by us",
       link: "/Tech",
+      alt: "A hand typing on a laptop with blue tech icons at the center",
     },
   ];
   useEffect(() => {
@@ -212,7 +214,7 @@ export default function Service() {
                 selected !== null && selected >= rowStart && selected < rowEnd;
 
               return (
-                <>
+                <section key={value}>
                   <div
                     className="each-service"
                     onClick={() =>
@@ -261,7 +263,7 @@ export default function Service() {
                       </div>
                     </div>
                   )}
-                </>
+                </section>
               );
             })}
           </div>
@@ -269,12 +271,11 @@ export default function Service() {
         <NetworkDeployment />
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">
-          {pageDirection.map((direction) => (
-            <div className="each-page">
-              <img src={direction.img} alt="" />
+          {pageDirection.map((direction, value) => (
+            <div className="each-page" key={value}>
+              <img src={direction.img} alt={direction.alt} loading="lazy" />
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
-                {/* <p className="message">{direction.message}</p> */}
                 <Link className="link-button" to={direction.link}>
                   {direction.name}
                 </Link>

@@ -82,7 +82,7 @@ export default function Policy() {
           </ul>
         </div>
         <div className="exec-signature">
-          <img src="exec-signatures.png" alt="" />
+          <img src="exec-signatures.png" alt="CEO Signature" loading="lazy" />
         </div>
       </main>
     </>

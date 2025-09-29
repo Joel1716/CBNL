@@ -22,6 +22,7 @@ export default function Location() {
         <img
           src="Map.webp"
           alt="Map of Africa highlighted with countries CBNL operate in"
+          loading="lazy"
         />
       </div>
     </div>

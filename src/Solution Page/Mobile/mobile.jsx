@@ -78,6 +78,7 @@ export default function MobileBackhaul() {
         <div className="mobile-container">
           <TwoColumnLayout
             img="Mobile-Diagram.jpg"
+            alt="First Mobile Diagram"
             color="#f8f9fa"
             boxShadow="0 2px 6px rgba(0, 0, 0, 0.1)"
           >
@@ -103,6 +104,7 @@ export default function MobileBackhaul() {
           </TwoColumnLayout>
           <TwoColumnLayout
             img="Mobile-Diagram2.jpg"
+            alt="Second Mobile Diagram"
             color="#f8f9fa"
             reverse={true}
             boxShadow="0 2px 6px rgba(0, 0, 0, 0.1)"
@@ -159,10 +161,11 @@ export default function MobileBackhaul() {
                 courseClick={clicked}
                 heading={data.heading}
                 value={value}
+                key={value}
               >
                 <ul>
-                  {data.info.map((eachInfo) => (
-                    <li>{eachInfo}</li>
+                  {data.info.map((eachInfo, value) => (
+                    <li key={value}>{eachInfo}</li>
                   ))}
                 </ul>
               </Expandable>

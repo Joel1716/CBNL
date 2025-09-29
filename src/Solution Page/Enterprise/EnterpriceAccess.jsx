@@ -77,6 +77,7 @@ export default function EnterpriseAccess() {
           height="auto"
           boxShadow="0 2px 6px rgba(0, 0, 0, 0.1)"
           color="#f8f9fa"
+          alt="Enterprise-Diagram"
         >
           <div className="solution-info">
             <h2>Enterprise Access</h2>
@@ -107,9 +108,9 @@ export default function EnterpriseAccess() {
             for:
           </h2>
           <div className="solution-inner-provision-container">
-            {provisonData.map((data) => {
+            {provisonData.map((data, value) => {
               return (
-                <div className="each-solution text-center">
+                <div key={value} className="each-solution text-center">
                   <h3>{data.heading}</h3>
                   <p>{data.info}</p>
                 </div>
@@ -149,10 +150,11 @@ export default function EnterpriseAccess() {
                 courseClick={clicked}
                 heading={data.heading}
                 value={value}
+                key={value}
               >
                 <ul>
-                  {data.info.map((eachInfo) => (
-                    <li>{eachInfo}</li>
+                  {data.info.map((eachInfo, value) => (
+                    <li key={value}>{eachInfo}</li>
                   ))}
                 </ul>
               </Expandable>
