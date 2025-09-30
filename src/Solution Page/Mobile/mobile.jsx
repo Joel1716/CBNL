@@ -1,7 +1,8 @@
-import { TwoColumnLayout } from "../../Location Page/LocationPage";
+import TwoColumnLayout from "../../TwoColumnLayout.jsx";
 import Hero from "../../Hero/Hero";
-import { Expandable } from "../../Training/Training";
+import Expandable from "../../Expandable.jsx";
 import { useState } from "react";
+import WideBandApproach from "../../WideBandApproach.jsx";
 export default function MobileBackhaul() {
   const [clicked, setClicked] = useState(false);
   const datas = [
@@ -174,14 +175,5 @@ export default function MobileBackhaul() {
         </div>
       </main>
     </>
-  );
-}
-
-export function WideBandApproach({ children }) {
-  return (
-    <div className="wideband-approach">
-      <h2>The wideband PMP approach</h2>
-      <div className="wideband-info">{children}</div>
-    </div>
   );
 }

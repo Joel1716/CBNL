@@ -1,5 +1,6 @@
 import Hero from "../../Hero/Hero";
 import { Link } from "react-router-dom";
+import TextLogo from "../../TextLogo.jsx";
 export default function NetworkBand() {
   const heroInfo = {
     page: "band-hero",
@@ -33,28 +34,5 @@ export default function NetworkBand() {
         />
       </main>
     </>
-  );
-}
-
-export function TextLogo({ information, heading, link, img }) {
-  return (
-    <div className="band-info-container">
-      <h2>{heading}</h2>
-      <div className="intro-info-img">
-        <div>
-          <ul>
-            {information.map((info, value) => {
-              return <li key={value}>{info}</li>;
-            })}
-          </ul>
-          <button>
-            <a href={link} target="_blank">
-              Read More
-            </a>
-          </button>
-        </div>
-        <img src={img} alt={`${img.split(".")[0]} Logo`} loading="lazy" />
-      </div>
-    </div>
   );
 }

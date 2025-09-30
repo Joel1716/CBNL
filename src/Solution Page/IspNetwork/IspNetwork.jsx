@@ -1,6 +1,6 @@
 import Hero from "../../Hero/Hero.jsx";
-import { WideBandApproach } from "../Mobile/mobile";
-import { Expandable } from "../../Training/Training.jsx";
+import WideBandApproach from "../../WideBandApproach.jsx";
+import Expandable from "../../Expandable.jsx";
 import { useState } from "react";
 export default function IspNetwork() {
   const [clicked, setClicked] = useState(false);

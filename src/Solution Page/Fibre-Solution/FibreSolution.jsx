@@ -1,5 +1,5 @@
-import Hero from "../../Hero/Hero";
-import { TextLogo } from "../NetworkBand/NetworkBand";
+import Hero from "../../Hero/Hero.jsx";
+import TextLogo from "../../TextLogo.jsx";
 export default function FibreSolution() {
   const heroInfo = {
     page: "fiber-solution-hero",

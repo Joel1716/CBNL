@@ -20,6 +20,7 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+/* Re-usable classes */
 .flex-center {
   display: flex;
   align-items: center;
@@ -31,6 +32,8 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* General Styles */
 a {
   display: inline-block;
   text-decoration: none;
@@ -92,6 +95,7 @@ main h2 {
   font-size: 1.9rem;
   line-height: 1.9;
 }
+
 /* PAGE REDIRECTION */
 .other-pages {
   margin-top: 4rem;
@@ -141,4 +145,116 @@ main h2 {
 }
 .each-page-info .link-button:hover {
   background-color: var(--button-hover);
+}
+
+/* Two Column Container */
+.column-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+.column-image {
+  width: 100%;
+  height: 100%;
+}
+
+.column-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.column-container.reverse .column-image {
+  grid-row: 1/2;
+}
+
+/* Expandable */
+.courses div {
+  cursor: pointer;
+}
+.course-heading {
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 1.5rem 1.5rem;
+}
+.course-heading p {
+  font-size: 1.9rem;
+  color: black;
+}
+.info-heading {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.courses .course-info {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  height: 0px;
+  padding: 0 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: padding 0.2s;
+}
+.courses.courseClick .course-info {
+  height: 100%;
+  padding: 1.5rem;
+  opacity: 1;
+  visibility: visible;
+  transition: padding 0.2s;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+
+/* WideBand Approach */
+.wideband-approach {
+  width: 95%;
+  max-width: 130rem;
+  margin: 0 auto;
+  margin-top: 9rem;
+}
+.wideband-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.wideband-info p {
+  font-size: 1.9rem;
+  line-height: 1.9;
+}
+
+/* Text Logo */
+.intro-info-container {
+  margin-top: 5rem;
+}
+.intro-info-img {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.intro-info-img div {
+  width: 55%;
+}
+.intro-info-img img {
+  width: 45%;
+  max-width: 40rem;
+  height: 17rem;
+  object-fit: contain;
+  margin-left: 3rem;
+}
+
+.intro-info-img div ul {
+  margin: 1rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.intro-info-img div li {
+  list-style: decimal;
+  font-size: 1.9rem;
+  line-height: 1.6;
+}
+.intro-info-img div button {
+  margin-top: 1.5rem;
 }

@@ -233,6 +233,16 @@
   .footer a {
     font-size: 1.9rem;
   }
+  /* Two Column Container */
+  .column-container {
+    grid-template-columns: 1fr;
+  }
+  .column-container.reverse .column-image {
+    grid-row: 2/3;
+  }
+  .column-container .column-image {
+    height: 50rem;
+  }
 }
 @media (max-width: 44em) {
   html {
@@ -259,6 +269,18 @@
   .contacts .address p,
   .company-info p {
     line-height: 1.8;
+  }
+}
+/* Wideband Approach */
+@media (max-width: 39em) {
+  .intro-info-img {
+    flex-direction: column-reverse;
+  }
+  .intro-info-img div {
+    width: 100%;
+  }
+  .intro-info-img img {
+    width: 80%;
   }
 }
 @media (max-width: 32em) {

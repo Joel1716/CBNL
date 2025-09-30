@@ -1,7 +1,7 @@
-import Hero from "../../Hero/Hero";
-import { TwoColumnLayout } from "../../Location Page/LocationPage";
-import { WideBandApproach } from "../Mobile/mobile";
-import { Expandable } from "../../Training/Training";
+import Hero from "../../Hero/Hero.jsx";
+import TwoColumnLayout from "../../TwoColumnLayout.jsx";
+import WideBandApproach from "../../WideBandApproach.jsx";
+import Expandable from "../../Expandable.jsx";
 import { useState } from "react";
 export default function EnterpriseAccess() {
   const [clicked, setClicked] = useState(false);

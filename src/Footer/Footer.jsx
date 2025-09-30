@@ -105,10 +105,10 @@ export default function Footer() {
               <Link to="/OEM">OEM Team</Link>
             </div>
             <div>
-              <Link to="/ISP">Careers</Link>
+              <Link to="/Support">Support</Link>
             </div>
             <div>
-              <Link to="/Reach-Us">Contact</Link>
+              <Link to="/Reach-Us">Reach Us</Link>
             </div>
           </div>
         </div>

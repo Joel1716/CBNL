@@ -1,5 +1,5 @@
 import Hero from "../../Hero/Hero";
-import { TextLogo } from "../NetworkBand/NetworkBand";
+import TextLogo from "../../TextLogo.jsx";
 export default function FifthGeneration() {
   const heroInfo = {
     page: "five-gen-hero",

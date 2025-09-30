@@ -26,7 +26,7 @@ import FifthGeneration from "./Solution Page/5G-Solution/5G-Solution.jsx";
 import SpaceOptics from "./Solution Page/Space-Optics/SpaceOptics.jsx";
 import FibreSolution from "./Solution Page/Fibre-Solution/FibreSolution.jsx";
 // Reusables
-import StickyHeader from "./Header.jsx";
+import StickyHeader from "./Header/Header.jsx";
 import Footer from "./Footer/Footer.jsx";
 import "./App.css";
 import "./queries.css";

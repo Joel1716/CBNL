@@ -245,6 +245,7 @@ export default function Service() {
                             <ul>
                               {services[selected].list.map((list, value) => (
                                 <EachPoint
+                                  key={value}
                                   list={list}
                                   services={services}
                                   selected={selected}

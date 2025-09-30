@@ -1,6 +1,7 @@
 import "./Training.css";
 import Hero from "../Hero/Hero";
 import { useState } from "react";
+import Expandable from "../Expandable.jsx";
 export default function Training() {
   const [courseClick, setCourseClick] = useState(false);
   const heroInfo = {
@@ -139,30 +140,5 @@ export default function Training() {
         </div>
       </main>
     </>
-  );
-}
-
-export function Expandable({
-  heading,
-  infoHeading,
-  onCourseClick,
-  courseClick,
-  value,
-  children,
-}) {
-  const open = value === courseClick;
-  return (
-    <div className={`courses ${open && "courseClick"}`}>
-      <div
-        className="course-heading"
-        onClick={() => onCourseClick(value === courseClick ? null : value)}
-      >
-        <p>{heading}</p>
-      </div>
-      <div className="course-info">
-        {infoHeading && <p className="info-heading">{infoHeading}</p>}
-        {children}
-      </div>
-    </div>
   );
 }

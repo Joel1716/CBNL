@@ -103,7 +103,6 @@ export default function ReachUs() {
           <label for="cars">
             Select a country below to view office contact information:{" "}
           </label>
-          {console.log(selectedCountry)}
           <select
             name="countriess"
             onChange={(e) => setSelectedCountry(e.target.value)}

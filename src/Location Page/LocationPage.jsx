@@ -2,6 +2,7 @@ import { useState } from "react";
 import Hero from "../Hero/Hero";
 import { Link } from "react-router-dom";
 import "./LocationPage.css";
+import TwoColumnLayout from "../TwoColumnLayout.jsx";
 export default function LocationPage() {
   const [currentTab, setCurrentTab] = useState(0);
   const tabs = ["Nigeria", "Ghana", "Kenya", "South Africa"];
@@ -235,30 +236,6 @@ function ExpansionCountries({ cameroonData }) {
         </TwoColumnLayout>
       </div>
     </section>
-  );
-}
-
-export function TwoColumnLayout({
-  img,
-  alt,
-  color,
-  reverse = false,
-  boxShadow,
-  children,
-}) {
-  const containerStyles = {
-    boxShadow: boxShadow,
-    backgroundColor: color,
-  };
-  return (
-    <div style={containerStyles}>
-      <div className={`column-container ${reverse ? "reverse" : ""}`}>
-        {children}
-        <div className="column-image">
-          <img src={img} alt={alt} loading="lazy" />
-        </div>
-      </div>
-    </div>
   );
 }
 

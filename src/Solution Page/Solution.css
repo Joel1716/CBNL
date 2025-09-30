@@ -77,7 +77,6 @@
 }
 
 /*  */
-.wideband-approach,
 .expandable,
 .solution-outer-provision-container,
 .isp-solutions-container {
@@ -85,19 +84,7 @@
   max-width: 130rem;
   margin: 0 auto;
 }
-.wideband-approach {
-  margin-top: 9rem;
-}
-.wideband-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-.wideband-info p {
-  font-size: 1.9rem;
-  line-height: 1.9;
-}
+
 .expandable {
   margin-top: 8rem;
   border-bottom: 1px solid black;
@@ -216,49 +203,6 @@
   background-position: 50% 70%;
   background-size: cover;
 }
-.intro-info-img {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.intro-info-img div {
-  width: 55%;
-}
-.intro-info-img img {
-  width: 45%;
-  max-width: 40rem;
-  height: 17rem;
-  object-fit: contain;
-  margin-left: 3rem;
-}
-.band-info-container {
-  margin-top: 5rem;
-}
-.intro-info-img div ul {
-  margin: 1rem 0 0 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.intro-info-img div li {
-  list-style: decimal;
-  font-size: 1.9rem;
-  line-height: 1.6;
-}
-.intro-info-img div button {
-  margin-top: 1.5rem;
-}
-@media (max-width: 39em) {
-  .intro-info-img {
-    flex-direction: column-reverse;
-  }
-  .intro-info-img div {
-    width: 100%;
-  }
-  .intro-info-img img {
-    width: 80%;
-  }
-}
 /* Fiber Solution */
 .fiber-solution-hero {
   background: url("/Monitoring.webp");
@@ -276,4 +220,9 @@
   background: url("/Fifth-Gen.webp");
   background-position: center 60%;
   background-size: cover;
+}
+@media (max-width: 27em) {
+  .all-solutions {
+    grid-template-columns: 1fr;
+  }
 }
