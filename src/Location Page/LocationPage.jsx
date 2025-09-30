@@ -16,6 +16,7 @@ export default function LocationPage() {
       ],
       clients: ["MTN.svg", "INQ.png", "airtel.png", "9-mobile.png", "IHS.png"],
       image: "Nigeria-Area.webp",
+      fallBackImg: "",
     },
     {
       info: [
@@ -186,6 +187,7 @@ function MainCountries({ tabs, mainCountryData, currentTab }) {
         img={mainCountryData[currentTab].image}
         alt={mainCountryData[currentTab].image.split(".")[0]}
         color="#f8f9fa"
+        extension="jpg"
       >
         <div className="country-info">
           <h3>{tabs[currentTab]}</h3>
@@ -216,6 +218,7 @@ function ExpansionCountries({ cameroonData }) {
         <TwoColumnLayout
           img={cameroonData.image}
           alt={cameroonData.image.split(".")[0]}
+          extension="jpg"
         >
           <div className="country-info">
             <h3>Cameroon</h3>

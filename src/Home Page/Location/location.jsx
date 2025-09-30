@@ -19,11 +19,15 @@ export default function Location() {
         </button>
       </div>
       <div className="map-container">
-        <img
-          src="Map.webp"
-          alt="Map of Africa highlighted with countries CBNL operate in"
-          loading="lazy"
-        />
+        <picture>
+          <source srcSet="Map.webp" type="image/webp" />
+          <source srcSet="Fall-Back/Map.jpeg" type="image/jpeg" />
+          <img
+            src="Fall-Back/Map.jpeg"
+            alt="Map of Africa highlighted with countries CBNL operate in"
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
   );

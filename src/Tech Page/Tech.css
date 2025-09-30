@@ -1,4 +1,5 @@
 .tech-hero {
+  background: url("/Fall-Back/Tech.jpg");
   background: url("/Tech.webp");
   background-size: cover;
   background-position: center;

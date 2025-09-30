@@ -1,4 +1,5 @@
 .policy-hero {
+  background: url("/Fall-Back/Policy.jpg");
   background: url("/Policy.webp");
   background-size: cover;
   background-position: center;

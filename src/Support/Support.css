@@ -1,4 +1,5 @@
 .support-hero {
+  background-image: url("/Fall-Back/Support.jpg");
   background-image: url("/Support.webp");
   background-size: cover;
   background-position: 50% 15%;

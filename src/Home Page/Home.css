@@ -1,4 +1,5 @@
 .home-hero {
+  background: url("/Fall-Back/background.jpg");
   background: url("/background.webp");
   background-size: cover;
   background-position: top center;

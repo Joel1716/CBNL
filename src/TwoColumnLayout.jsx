@@ -4,6 +4,7 @@ export default function TwoColumnLayout({
   color,
   reverse = false,
   boxShadow,
+  extension,
   children,
 }) {
   const containerStyles = {
@@ -15,7 +16,18 @@ export default function TwoColumnLayout({
       <div className={`column-container ${reverse ? "reverse" : ""}`}>
         {children}
         <div className="column-image">
-          <img src={img} alt={alt} loading="lazy" />
+          <picture>
+            <source srcSet={img} type="image/webp" />
+            <source
+              srcSet={img.split(".").slice(0, -1).join(".") + `.${extension}`}
+              type="image/jpeg"
+            />
+            <img
+              src={img.split(".").slice(0, -1).join(".") + `.${extension}`}
+              alt={alt}
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </div>

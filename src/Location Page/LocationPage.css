@@ -1,4 +1,5 @@
 .location-hero {
+  background: url("/Fall-Back/Earth.jpg");
   background: url("/Earth.webp");
   background-size: cover;
   background-position: center;

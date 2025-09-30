@@ -147,6 +147,7 @@ export default function Service() {
   const pageDirection = [
     {
       img: "Training.webp",
+      fallBackImg: "Training.jpg",
       name: "Training",
       heading: "how we train professionals",
       link: "/Training",
@@ -154,6 +155,7 @@ export default function Service() {
     },
     {
       img: "Tech.webp",
+      fallBackImg: "Tech.jpg",
       name: "Technologies",
       heading: "Technologies used by us",
       link: "/Tech",
@@ -214,7 +216,7 @@ export default function Service() {
                 selected !== null && selected >= rowStart && selected < rowEnd;
 
               return (
-                <section key={value}>
+                <>
                   <div
                     className="each-service"
                     onClick={() =>
@@ -240,6 +242,7 @@ export default function Service() {
                         ) : (
                           <DeplomentServices
                             img={services[selected].img}
+                            extension="jpg"
                             imgBox="each-service-img"
                           >
                             <ul>
@@ -264,7 +267,7 @@ export default function Service() {
                       </div>
                     </div>
                   )}
-                </section>
+                </>
               );
             })}
           </div>
@@ -273,8 +276,16 @@ export default function Service() {
         <h2>You might also like</h2>
         <div className="other-pages grid-two-cols">
           {pageDirection.map((direction, value) => (
-            <div className="each-page" key={value}>
-              <img src={direction.img} alt={direction.alt} loading="lazy" />
+            <div key={value} className="each-page">
+              <picture>
+                <source srcSet={direction.img} type="image/webp" />
+                <source srcSet={direction.fallBackImg} type="image/jpeg" />
+                <img
+                  src={direction.fallBackImg}
+                  alt={direction.alt}
+                  loading="lazy"
+                />
+              </picture>
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
                 <Link className="link-button" to={direction.link}>
@@ -348,7 +359,12 @@ function NetworkDeployment() {
         design, build and transfer, as a turnkey service.
       </p>
       <div className="deployment-outer-container">
-        <DeplomentServices img="Microwave.webp" alt="A Tower" color="#f8f9fa">
+        <DeplomentServices
+          img="Microwave.webp"
+          alt="A Tower"
+          color="#f8f9fa"
+          extension="jpg"
+        >
           <h3 className="text-center">Microwave Implementation & Support</h3>
           <ul>
             <li className="main-info">
@@ -372,6 +388,7 @@ function NetworkDeployment() {
           img="fibre.webp"
           alt="FIbres connected in an ODF"
           color="#f8f9fa"
+          extension="jpg"
         >
           <h3 className="text-center">Fibre Optics</h3>
           <ul>
@@ -400,6 +417,7 @@ function NetworkDeployment() {
           img="VSAT.webp"
           alt="Satellite Dishes"
           color="#f8f9fa"
+          extension="jpg"
         >
           <h3 className="text-center">VSAT Sytems</h3>
           <ul>
@@ -414,7 +432,12 @@ function NetworkDeployment() {
             </li>
           </ul>
         </DeplomentServices>
-        <DeplomentServices img="BTS.webp" alt="Top of a Tower" color="#f8f9fa">
+        <DeplomentServices
+          img="BTS.webp"
+          alt="Top of a Tower"
+          color="#f8f9fa"
+          extension="jpg"
+        >
           <h3 className="text-center">Base Station(BTS)</h3>
           <ul>
             <li className="main-info">
@@ -445,6 +468,7 @@ function NetworkDeployment() {
 function DeplomentServices({
   img,
   alt,
+  extension,
   imgBox = "deployment-img-box",
   color,
   children,
@@ -459,7 +483,18 @@ function DeplomentServices({
     >
       <div className="deployment-info">{children}</div>
       <div className={imgBox}>
-        <img src={img} alt={alt} loading="lazy" />
+        <picture>
+          <source srcSet={img} type="image/webp" />
+          <source
+            srcSet={img.split(".").slice(0, -1).join(".") + `.${extension}`}
+            type="image/jpeg"
+          />
+          <img
+            src={img.split(".").slice(0, -1).join(".") + `.${extension}`}
+            alt={alt}
+            loading="lazy"
+          />
+        </picture>
       </div>
     </div>
   );

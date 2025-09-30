@@ -4,6 +4,7 @@ export default function Solutions() {
   const solutions = [
     {
       img: "ISP-Networks.webp",
+      fallbackImg: "ISP-Networks.jpg",
       heading: "ISP-Network",
       message:
         "High-capacity microwave and fibre solutions enabling reliable backhaul for ISPs, MNOs, and enterprises.",
@@ -11,6 +12,7 @@ export default function Solutions() {
     },
     {
       img: "Enterprise.webp",
+      fallbackImg: "Enterprise.jpg",
       heading: "Enterprise Access",
       message:
         "Dedicated high-speed internet for businesses, supporting secure operations and real-time connectivity.",
@@ -18,6 +20,7 @@ export default function Solutions() {
     },
     {
       img: "mobile.webp",
+      fallbackImg: "mobile.jpg",
       heading: "Mobile Backhaul",
       message:
         "Reliable wireless links that connect mobile towers to the core network, expanding coverage and boosting capacity.",
@@ -37,7 +40,19 @@ export default function Solutions() {
         {solutions.map((solution, value) => (
           <li key={value}>
             <figure>
-              <img src={solution.img} loading="lazy" />
+              <picture>
+                <source srcSet={solution.img} type="image/webp" />
+                <source
+                  srcSet={`Fall-Back/${solution.fallbackImg}`}
+                  type="image/jpeg"
+                />
+                <img
+                  src={`Fall-Back/${solution.fallbackImg}`}
+                  alt={solution.alt}
+                  loading="lazy"
+                />
+              </picture>
+
               <figcaption>
                 <main className="solution-main">
                   <h3>{solution.heading}</h3>

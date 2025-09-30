@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="company-info">
           <img
             className="company-logo"
-            src="CBNL Logo.png"
+            src="CBNL-Logo.png"
             alt="Company Logo"
             loading="lazy"
           />

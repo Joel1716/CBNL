@@ -1,4 +1,5 @@
 .training-hero {
+  background-image: url("/Fall-Back/Training.jpg");
   background-image: url("/Training.webp");
   background-size: cover;
   background-position: 50% 40%;

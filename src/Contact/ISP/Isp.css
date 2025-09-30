@@ -1,4 +1,5 @@
 .isp-hero {
+  background: url("/Fall-Back/ISP.jpg");
   background: url("/ISP.webp");
   background-size: cover;
   background-position: bottom;

@@ -60,11 +60,15 @@ export default function About() {
     <section id="about" className="about-section">
       <div className="about grid-two-cols">
         <div className="img-box">
-          <img
-            src="./Tower.webp"
-            alt="A Tower with blue background"
-            loading="lazy"
-          />
+          <picture>
+            <source srcSet="Tower.webp" type="image/webp" />
+            <source srcSet="Fall-Back/Tower.jpg" type="image/jpeg" />
+            <img
+              src="Fall-Back/Tower.jpg"
+              alt="A Tower with blue background"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div className="info-box">
           <h2>About us</h2>

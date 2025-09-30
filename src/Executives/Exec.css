@@ -1,4 +1,5 @@
 .exec-hero {
+  background: url("/Fall-Back/Team.jpg");
   background: url("/Teams.webp");
   background-size: cover;
   background-position: center;

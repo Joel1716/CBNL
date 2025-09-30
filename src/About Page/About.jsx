@@ -11,6 +11,7 @@ export default function About() {
   const pageDirection = [
     {
       img: "Teams.webp",
+      fallBackImg: "Team.jpg",
       name: "Executives",
       heading: "Meet our Executive Team",
       link: "/Exec",
@@ -18,6 +19,7 @@ export default function About() {
     },
     {
       img: "Policy.webp",
+      fallBackImg: "Policy.jpg",
       name: "Policy",
       heading: "Values We Follow",
       link: "/Policy",
@@ -73,11 +75,15 @@ export default function About() {
         <div className="vision-container">
           <h2>Our Vision</h2>
           <div className="vision">
-            <img
-              src="Visions.webp"
-              alt="Animation of a man looking up with a small handheld telescope to a mountain that has a bullseye"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="Visions.webp" type="image/webp" />
+              <source srcSet="Visions.png" type="image/png" />
+              <img
+                src="Visions.png"
+                alt="Animation of a man looking up with a small handheld telescope to a mountain that has a bullseye"
+                loading="lazy"
+              />
+            </picture>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
               doloremque, quasi natus, temporibus repudiandae quae odit fugit
@@ -101,11 +107,15 @@ export default function About() {
               inventore, et repellat corporis mollitia minima expedita! Cum,
               consectetur quae!
             </p>
-            <img
-              src="Mission.webp"
-              alt="Round globe with blue and red dots on them"
-              loading="lazy"
-            />
+            <picture>
+              <source srcSet="Mission.webp" type="image/webp" />
+              <source srcSet="Mission.jpg" type="image/jpeg" />
+              <img
+                src="Mission.jpg"
+                alt="Round globe with blue and red dots on them"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
         <CerfitiedContainer managementInfo={managementInfo} />
@@ -113,7 +123,15 @@ export default function About() {
         <div className="other-pages grid-two-cols">
           {pageDirection.map((direction, value) => (
             <div key={value} className="each-page">
-              <img src={direction.img} alt={direction.alt} loading="lazy" />
+              <picture>
+                <source srcSet={direction.img} type="image/webp" />
+                <source srcSet={direction.fallBackImg} type="image/jpeg" />
+                <img
+                  src={direction.fallBackImg}
+                  alt={direction.alt}
+                  loading="lazy"
+                />
+              </picture>
               <div className="each-page-info">
                 <p className="heading">{direction.heading}</p>
                 <Link className="link-button" to={direction.link}>

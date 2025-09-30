@@ -1,4 +1,5 @@
 .about-hero {
+  background: url("/Fall-Back/about.jpg");
   background: url("/about.webp");
   background-size: cover;
   background-position: bottom right;

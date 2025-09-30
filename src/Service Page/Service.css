@@ -1,4 +1,5 @@
 .service-hero {
+  background: url("/Fall-Back/services.jpg");
   background: url("/services.webp");
   background-size: cover;
   background-position: center;
