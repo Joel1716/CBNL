@@ -74,7 +74,7 @@ export default function About() {
           <h2>Our Vision</h2>
           <div className="vision">
             <img
-              src="Visions.png"
+              src="Visions.webp"
               alt="Animation of a man looking up with a small handheld telescope to a mountain that has a bullseye"
               loading="lazy"
             />
@@ -102,7 +102,7 @@ export default function About() {
               consectetur quae!
             </p>
             <img
-              src="Mission.jpg"
+              src="Mission.webp"
               alt="Round globe with blue and red dots on them"
               loading="lazy"
             />

@@ -42,7 +42,7 @@ export default function Clients() {
     },
     {
       img: "safaricom.png",
-      alt: "",
+      alt: "Safaricom Logo",
     },
     {
       img: "Liquid.png",
@@ -70,7 +70,6 @@ export default function Clients() {
       <div>
         <div className="clients-heading text-center">
           <h2>Our Clients</h2>
-          {/* <h3>Trusted by Industry Leaders across africa</h3> */}
           <p>
             We work with top companies in Nigeria, Kenya, Ghana, South-Africa
             and many more...

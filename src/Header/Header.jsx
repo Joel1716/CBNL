@@ -43,7 +43,7 @@ export default function StickyHeader({ navClick, onNavClick }) {
           burgerClick ? "open" : "close"
         } ${navClick ? "nav-shown" : ""}`}
       >
-        <img className="company-logo" src="CBNL Logo.png" alt="Company Logo" />
+        <img className="company-logo" src="CBNL-Logo.png" alt="Company Logo" />
         <nav>
           <ul className="flex-center">
             <li
